@@ -1,0 +1,1008 @@
+/* ==========================================================================
+   SISTEMA DE DISEÑO: BOLSILLOS APP (PORTAFOLIO UX ACCESIBLE - WCAG 2.1 AA)
+   Autores: Jessica Armoa, Santiago Peralta, Sebastián Leguizamón
+   Espaciado base: Múltiplos de 8px (8, 16, 24, 32, 48, 64px)
+   Tipografía: 'Inter', sans-serif (Regular 400, Semibold 600, Bold 700)
+   ========================================================================== */
+
+:root {
+  /* Paleta Oficial Bolsillos App + Ajustes de Contraste WCAG AA */
+  --color-action: #456EFE;          /* Color de acción / acento principal */
+  --color-action-hover: #2E56E8;    /* Hover accesible de acción */
+  --color-action-soft: #EEF2FF;     /* Fondo suave para acentos y badges */
+  --color-text-primary: #23303B;    /* Contraste 11.2:1 sobre #FFFFFF */
+  --color-text-secondary: #596066;  /* Ajustado desde #8E949A para contraste >= 6.3:1 en texto chico */
+  --color-text-muted-token: #8E949A;/* Token original documentado en Sistema de Diseño */
+  --color-border: #A4A9AE;          /* Bordes de tarjetas e inputs */
+  --color-border-soft: #DCE0E4;     /* Divisores suaves de tablas y secciones */
+  --color-bg-primary: #FFFFFF;      /* Fondo principal */
+  --color-bg-secondary: #F8F9FA;    /* Fondo alterno para diferenciar secciones/tarjetas */
+  
+  /* Estados semánticos (siempre acompañados de ícono + etiqueta textual) */
+  --color-error: #D93838;           /* Rojo accesible WCAG AA para texto y bordes */
+  --color-error-token: #FF6363;     /* Token de alerta en UI de la app */
+  --color-error-bg: #FFF5F5;
+  --color-warning: #B45309;
+  --color-warning-bg: #FEF3C7;
+  --color-success: #0E8A68;         /* Verde accesible WCAG AA para texto */
+  --color-success-token: #13C999;   /* Token de confirmación en UI de la app */
+  --color-success-bg: #ECFDF5;
+
+  /* Escala de espaciado (Sistema 8pt) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+
+  /* Bordes y sombras */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 2px 8px rgba(35, 48, 59, 0.06);
+  --shadow-md: 0 8px 24px rgba(35, 48, 59, 0.08);
+
+  /* Contenedor y tipografía */
+  --max-width: 1160px;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ==========================================================================
+   1. RESET Y BASE ACCESIBLE
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%; /* 16px base */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estados de foco visibles y de alto contraste para navegación por teclado */
+:focus-visible {
+  outline: 3px solid var(--color-action);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Enlace "Saltar al contenido principal" (Skip Link) */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: var(--space-2);
+  z-index: 2000;
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-primary);
+  padding: var(--space-2) var(--space-3);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: var(--space-2);
+  outline: 3px solid var(--color-action);
+}
+
+/* ==========================================================================
+   2. TIPOGRAFÍA Y JERARQUÍA SEMÁNTICA
+   ========================================================================== */
+h1, h2, h3, h4 {
+  margin-top: 0;
+  color: var(--color-text-primary);
+  font-weight: 600; /* Inter Semibold */
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: var(--space-2);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: var(--space-2);
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+h4 {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-1);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--space-2);
+}
+
+.lead {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 75ch;
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-small {
+  font-size: 0.875rem; /* 14px */
+}
+
+a {
+  color: var(--color-action);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--color-action-hover);
+}
+
+/* ==========================================================================
+   3. CABECERA Y NAVEGACIÓN FIJA (STICKY)
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-1) var(--space-3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  min-height: 48px;
+}
+
+.brand-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-action);
+  display: inline-block;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.main-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 6px 10px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  background-color: var(--color-action-soft);
+  color: var(--color-action);
+}
+
+.main-nav a.nav-final {
+  color: var(--color-text-secondary);
+  border: 1px dashed var(--color-border);
+}
+
+/* ==========================================================================
+   4. LAYOUT Y SECCIONES
+   ========================================================================== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+}
+
+.section {
+  padding: var(--space-8) 0;
+  border-bottom: 1px solid var(--color-border-soft);
+  scroll-margin-top: 72px;
+}
+
+.section-alt {
+  background-color: var(--color-bg-secondary);
+}
+
+.section-header {
+  margin-bottom: var(--space-4);
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-action);
+  background-color: var(--color-action-soft);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: var(--space-1);
+}
+
+/* ==========================================================================
+   5. COMPONENTES REUTILIZABLES (.card, .metric-grid, .placeholder-box, etc.)
+   ========================================================================== */
+.card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-highlight {
+  border-left: 4px solid var(--color-action);
+}
+
+/* Grillas responsivas */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-3);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+}
+
+.grid-4,
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-3);
+  margin: var(--space-3) 0;
+}
+
+/* Tarjetas de métricas / hallazgos */
+.metric-card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-action);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-action);
+  line-height: 1.1;
+  margin-bottom: var(--space-1);
+}
+
+.metric-sub {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-1);
+}
+
+/* Citas textuales */
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+  margin: var(--space-3) 0;
+}
+
+blockquote.user-quote {
+  margin: 0;
+  padding: var(--space-3);
+  background-color: var(--color-bg-primary);
+  border-left: 4px solid var(--color-action);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  box-shadow: var(--shadow-sm);
+  font-style: italic;
+  color: var(--color-text-primary);
+}
+
+blockquote.user-quote footer {
+  margin-top: var(--space-2);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+/* Bloques pendientes (.pendiente y .placeholder-box) */
+.pendiente,
+.placeholder-box {
+  border: 2px dashed var(--color-action);
+  background-color: #F4F7FF;
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  margin: var(--space-2) 0;
+  color: var(--color-text-primary);
+}
+
+.pendiente-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-warning-bg);
+  color: var(--color-warning);
+  border: 1px solid var(--color-warning);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: var(--space-1);
+}
+
+/* Figuras y placeholders gráficos */
+figure.media-figure {
+  margin: var(--space-3) 0;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2);
+}
+
+.img-placeholder {
+  width: 100%;
+  min-height: 220px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #F4F7FF,
+    #F4F7FF 12px,
+    #E8EEFF 12px,
+    #E8EEFF 24px
+  );
+  border: 2px dashed var(--color-action);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-3);
+  color: var(--color-text-primary);
+}
+
+figure.media-figure img {
+  margin: 0 auto;
+  border-radius: var(--radius-sm);
+}
+
+figcaption {
+  margin-top: var(--space-2);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+/* ==========================================================================
+   6. TABLAS ACCESIBLES Y RESPONSIVAS (.table-wrapper)
+   ========================================================================== */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: var(--space-3) 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-primary);
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9375rem;
+}
+
+caption {
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+th, td {
+  padding: var(--space-2);
+  border-bottom: 1px solid var(--color-border-soft);
+  vertical-align: top;
+}
+
+thead th {
+  background-color: #EEF2F6;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-border);
+}
+
+tbody tr:hover {
+  background-color: #F8FAFC;
+}
+
+/* ==========================================================================
+   7. BADGES DE SEVERIDAD Y ALERTAS (Ícono + Texto, nunca solo color)
+   ========================================================================== */
+.badge-sev-1,
+.badge-sev-2,
+.badge-sev-3,
+.badge-sev-4,
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+/* Severidad 1: Cosmético */
+.badge-sev-1 {
+  background-color: #F1F5F9;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+}
+
+/* Severidad 2: Menor */
+.badge-sev-2 {
+  background-color: var(--color-action-soft);
+  color: #1E40AF;
+  border: 1px solid var(--color-action);
+}
+
+/* Severidad 3: Mayor */
+.badge-sev-3 {
+  background-color: var(--color-warning-bg);
+  color: var(--color-warning);
+  border: 1px solid var(--color-warning);
+}
+
+/* Severidad 4: Catastrófico / Crítico */
+.badge-sev-4 {
+  background-color: var(--color-error-bg);
+  color: var(--color-error);
+  border: 1px solid var(--color-error);
+}
+
+.badge-success {
+  background-color: var(--color-success-bg);
+  color: var(--color-success);
+  border: 1px solid var(--color-success);
+}
+
+/* ==========================================================================
+   8. MUESTRAS DE COLOR (.swatch) Y DEMOSTRACIÓN DEL SISTEMA DE DISEÑO
+   ========================================================================== */
+.swatch-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(35, 48, 59, 0.25);
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+/* Botones del Sistema de Diseño (Áreas táctiles mínimas >= 48x48px) */
+.btn-demo-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+  margin: var(--space-2) 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  min-height: 48px;
+  min-width: 48px;
+  padding: 12px 24px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-action);
+  color: #FFFFFF;
+  border: 2px solid var(--color-action);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-action-hover);
+  border-color: var(--color-action-hover);
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-action);
+  border: 2px solid var(--color-action);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-action-soft);
+}
+
+.btn-tertiary {
+  background-color: transparent;
+  color: var(--color-action);
+  border: 2px solid transparent;
+  text-decoration: underline;
+}
+
+.btn-tertiary:hover {
+  background-color: var(--color-action-soft);
+}
+
+.btn[disabled],
+.btn-disabled {
+  background-color: #E2E8F0;
+  color: var(--color-text-secondary);
+  border-color: var(--color-border);
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
+/* Componentes de formulario demostrativos del Sistema de Diseño */
+.form-demo-group {
+  margin-bottom: var(--space-2);
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--color-text-primary);
+}
+
+.form-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 14px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.form-input-error {
+  border-color: var(--color-error);
+  background-color: var(--color-error-bg);
+}
+
+.helper-text {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-top: 6px;
+}
+
+.error-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-error);
+  margin-top: 6px;
+}
+
+/* ==========================================================================
+   9. COMPONENTES ESPECÍFICOS DE SECCIONES (PORTADA, EMPATÍA, POV, EVOLUCIÓN)
+   ========================================================================== */
+.hero-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto var(--space-4) auto;
+}
+
+.hero-header .team-list {
+  justify-content: center;
+}
+
+.hero-header .btn-demo-group {
+  justify-content: center;
+}
+
+/* Ficha técnica superior estilo Case Study profesional (IxDF / Pratibha Joshi) */
+.case-meta-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-2);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  margin: var(--space-4) 0;
+  text-align: left;
+}
+
+.case-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.case-meta-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-action);
+}
+
+.case-meta-value {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* Escaparate inicial de 3 pantallas de Figma en marcos de celular (Phone Mockups) */
+.figma-showcase-wrapper {
+  background: linear-gradient(180deg, var(--color-action-soft) 0%, #FFFFFF 100%);
+  border: 1px solid #D5E0FF;
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-3);
+  margin: var(--space-4) 0;
+}
+
+.figma-phones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.phone-frame {
+  background-color: var(--color-bg-primary);
+  border: 8px solid var(--color-text-primary);
+  border-radius: 32px;
+  padding: var(--space-2);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  position: relative;
+}
+
+.phone-notch {
+  width: 96px;
+  height: 14px;
+  background-color: var(--color-text-primary);
+  border-radius: 999px;
+  margin: 0 auto var(--space-2) auto;
+}
+
+.phone-screen-ui {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-soft);
+  border-radius: 20px;
+  padding: var(--space-2);
+  text-align: left;
+}
+
+.pocket-mini-card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-action);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+
+.pocket-mini-card.pocket-biz {
+  border-left-color: var(--color-success-token);
+}
+
+.pocket-mini-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  display: block;
+}
+
+.pocket-mini-amount {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  list-style: none;
+  padding: 0;
+  margin: var(--space-2) 0 var(--space-3) 0;
+}
+
+.team-badge {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.problem-box {
+  background-color: var(--color-action-soft);
+  border-left: 5px solid var(--color-action);
+  padding: var(--space-3);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin: var(--space-3) 0;
+}
+
+/* Grilla 2x3 Mapa de Empatía */
+.empathy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.empathy-cell {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.empathy-cell h4 {
+  color: var(--color-action);
+  border-bottom: 1px solid var(--color-border-soft);
+  padding-bottom: var(--space-1);
+  margin-bottom: var(--space-2);
+}
+
+/* Tarjetas POV y HMW */
+.pov-hmw-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-3);
+  margin: var(--space-3) 0;
+}
+
+/* Grilla Crazy 8s (8 alternativas) */
+.crazy8-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.crazy8-card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.crazy8-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-action);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+/* Tarjetas comparativas de 3 columnas (Papel -> Wireframe -> Alta Fidelidad) */
+.proto-evolution-card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+
+.proto-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin: var(--space-3) 0;
+}
+
+.proto-stage {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+  padding: var(--space-2);
+}
+
+.proto-changelog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border-soft);
+}
+
+/* Secciones colapsables de Entrega Final (7, 8 y 9) */
+details.final-delivery-details {
+  background-color: var(--color-bg-primary);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+details.final-delivery-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  min-height: 48px;
+}
+
+details.final-delivery-details[open] summary {
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+/* Pie de página */
+.site-footer {
+  background-color: var(--color-text-primary);
+  color: #FFFFFF;
+  padding: var(--space-6) 0;
+}
+
+.site-footer a {
+  color: #93C5FD;
+}
+
+.site-footer .text-secondary {
+  color: #CBD5E1;
+}
+
+/* ==========================================================================
+   10. MEDIA QUERIES (RESPONSIVE MÓVIL Y TABLET)
+   ========================================================================== */
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  .empathy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .proto-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: var(--space-6) 0;
+  }
+  .empathy-grid {
+    grid-template-columns: 1fr;
+  }
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-nav ul {
+    gap: 2px;
+  }
+}
