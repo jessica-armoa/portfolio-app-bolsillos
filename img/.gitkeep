@@ -1,0 +1,14 @@
+# Guía de imágenes requeridas en /img
+
+Colocar en esta carpeta los siguientes archivos gráficos con los nombres exactos referenciados en `index.html`:
+
+1. `portada-alta-fidelidad.png` — Pantalla 1 de Figma: Dashboard de Bolsillos separados (Sección 1: Escaparate inicial en Portada).
+2. `figma-hero-registro.png` — Pantalla 2 de Figma: Registro ultrarrápido en <= 10 segundos (Sección 1: Escaparate inicial en Portada).
+3. `figma-hero-alerta.png` — Pantalla 3 de Figma: Alerta de sobregiro en lenguaje coloquial (Sección 1: Escaparate inicial en Portada).
+4. `graficos-encuesta.png` — Gráficos cuantitativos de los 23 encuestados (Sección 2: Investigación).
+3. `mapa-afinidad.png` — Captura del Affinity Mapping realizado tras las entrevistas (Sección 2: Investigación).
+4. `crazy8s.jpg` — Fotografías de los bocetos en papel de la lluvia de ideas y Crazy 8s (Sección 4: Ideación).
+5. `tarea1-papel.jpg`, `tarea1-wireframe.png`, `tarea1-alta.png` — Evolución de la Tarea 1 (Sección 5: Prototipos).
+6. `tarea2-papel.jpg`, `tarea2-wireframe.png`, `tarea2-alta.png` — Evolución de la Tarea 2 (Sección 5: Prototipos).
+7. `tarea3-papel.jpg`, `tarea3-wireframe.png`, `tarea3-alta.png` — Evolución de la Tarea 3 (Sección 5: Prototipos).
+8. `sistema-diseno.png` — Captura de la página de componentes y tokens en Figma (Sección 5: Sistema de Diseño).
