@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portafolio académico de proceso UX de Bolsillos App (Fronteras Financieras: Del Caos al Control). Diseño centrado en el usuario y accesibilidad web WCAG.">
+  <title>Bolsillos App — Portafolio de Proceso UX (Fronteras Financieras)</title>
+
+  <!-- Google Fonts: Inter (Regular 400, Semibold 600, Bold 700) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos principal basada en el Sistema de Diseño de Bolsillos App -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <!-- Enlace de accesibilidad para saltar directamente al contenido principal -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Cabecera fija con navegación ordenada por las 9 secciones del proceso UX -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#portada" class="brand" aria-label="Bolsillos App - Ir al inicio del portafolio">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Bolsillos App <span class="text-secondary text-small">| Portafolio UX</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal de secciones del portafolio">
+        <ul>
+          <li><a href="#portada">1. Portada</a></li>
+          <li><a href="#investigacion">2. Investigación</a></li>
+          <li><a href="#definicion">3. Definición</a></li>
+          <li><a href="#ideacion">4. Ideación</a></li>
+          <li><a href="#prototipos">5. Prototipos</a></li>
+          <li><a href="#evaluaciones">6. Evaluaciones</a></li>
+          <li><a href="#demo" class="nav-final" title="Sección para Entrega Final">7. Demo</a></li>
+          <li><a href="#prueba-demo" class="nav-final" title="Sección para Entrega Final">8. Prueba Demo</a></li>
+          <li><a href="#reflexion" class="nav-final" title="Sección para Entrega Final">9. Reflexión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- ===================================================================== -->
+    <!-- INICIO BLOQUE INTEGRANTE 1 (Secciones 1 a 3)                          -->
+    <!-- ===================================================================== -->
+
+    <!-- SECCIÓN 1: PORTADA -->
+    <!-- SECCIÓN 1: PORTADA (ESTILO CASE STUDY CON PANTALLAS DE FIGMA AL INICIO) -->
+    <section id="portada" class="section" aria-labelledby="titulo-portada">
+      <div class="container hero-grid">
+        <div>
+          <span class="section-eyebrow">1. Portada — Entrega Parcial UX</span>
+          <h1 id="titulo-portada">Bolsillos App <span
+              style="display:block; font-size:0.6em; color:var(--color-text-secondary); font-weight:600; margin-top:8px;">Fronteras
+              Financieras: Del Caos al Control</span></h1>
+          <div class="container">
+            <div class="hero-header">
+              <span class="section-eyebrow">1. Caso de Estudio UX — Entrega Parcial</span>
+              <h1 id="titulo-portada">Bolsillos App <span
+                  style="display:block; font-size:0.58em; color:var(--color-text-secondary); font-weight:600; margin-top:8px;">Fronteras
+                  Financieras: Del Caos al Control</span></h1>
+
+              <h2>Integrantes del equipo</h2>
+              <h2 class="text-small"
+                style="text-transform:uppercase; letter-spacing:0.06em; color:var(--color-text-secondary); margin-bottom:8px;">
+                Equipo de Diseño UX</h2>
+              <ul class="team-list" aria-label="Integrantes del proyecto">
+                <li class="team-badge">Jessica Armoa</li>
+                <li class="team-badge">Santiago Peralta</li>
+                <li class="team-badge">Sebastián Leguizamón</li>
+              </ul>
+
+              <div class="problem-box">
+                <h3>El problema y para quién diseñamos</h3>
+                <div class="btn-demo-group">
+                  <a href="#investigacion" class="btn btn-primary">Explorar Proceso de Investigación</a>
+                  <a href="#prototipos" class="btn btn-secondary">Ver Evolución y Sistema de Diseño</a>
+                </div>
+              </div>
+
+              <!-- Ficha ejecutiva del Caso de Estudio (Inspirada en portafolios IxDF / Pratibha Joshi) -->
+              <div class="case-meta-bar" role="region" aria-label="Ficha técnica del caso de estudio">
+                <div class="case-meta-item">
+                  <span class="case-meta-label">Rol del Equipo</span>
+                  <span class="case-meta-value">UX Research · Arquitectura de Información · UI &amp; Accesibilidad
+                    WCAG</span>
+                </div>
+                <div class="case-meta-item">
+                  <span class="case-meta-label">Métodos y Muestra</span>
+                  <span class="case-meta-value">23 Encuestas Cuantitativas · 2 Entrevistas en Profundidad · Crazy
+                    8s</span>
+                </div>
+                <div class="case-meta-item">
+                  <span class="case-meta-label">Herramientas</span>
+                  <span class="case-meta-value">Figma · Gemini AI (Síntesis verificada) · HTML5 / CSS3 Accesible</span>
+                </div>
+                <div class="case-meta-item">
+                  <span class="case-meta-label">Meta de Impacto UX</span>
+                  <span class="case-meta-value">Separación perceptual sin clics · Registro en ≤ 10 segundos</span>
+                </div>
+              </div>
+
+              <!-- El problema y la solución lado a lado antes del escaparate visual -->
+              <div class="grid-2" style="margin-bottom:var(--space-4);">
+                <div class="problem-box" style="margin:0;">
+                  <h3>⚠️ El Problema y Para Quién Es</h3>
+                  <p style="margin-bottom:0;">
+                    <strong>Personas con múltiples fuentes de ingreso</strong> (especialmente emprendedoras que combinan
+                    sueldo fijo con proyectos paralelos) que sufren una <strong>"falsa sensación de liquidez"</strong>
+                    al ver su saldo bancario unificado y terminan mezclando fondos y descapitalizando su negocio por
+                    accidente.
+                  </p>
+                </div>
+
+                <div class="btn-demo-group">
+                  <a href="#investigacion" class="btn btn-primary">Explorar investigación de usuarios</a>
+                  <a href="#prototipos" class="btn btn-secondary">Ver Sistema de Diseño y Prototipos</a>
+                  <div class="card card-highlight">
+                    <h3>✨ La Solución Propuesta (Impacto Visual Inmediato)</h3>
+                    <p style="margin-bottom:0;">
+                      <strong>Bolsillos App</strong> elimina el saldo total consolidado de la vista inicial y traza
+                      <strong>fronteras visuales estrictas por fuente de ingreso</strong>, permitiendo registrar
+                      movimientos con solo <strong>2 campos obligatorios en ≤ 10 segundos</strong> y alertando en
+                      lenguaje coloquial antes de gastar fondos de reposición.
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <figure class="media-figure">
+                    <img src="img/portada-alta-fidelidad.png"
+                      alt="Vista previa en alta fidelidad de Bolsillos App mostrando tarjetas de bolsillos separados para Sueldo Fijo y Emprendimiento sin saldo total unificado"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder pendiente" style="display:flex;">
+                      <span class="pendiente-tag">⚠️ Imagen Pendiente</span>
+                      <strong>Mockup Principal en Alta Fidelidad</strong>
+                      <span class="text-small text-secondary">Ruta esperada:
+                        <code>img/portada-alta-fidelidad.png</code></span>
+                    </div>
+                    <figcaption>
+                      Figura 1.1: Pantalla principal de Bolsillos App en alta fidelidad con fronteras visuales claras
+                      por cada fuente de ingreso.
+                    </figcaption>
+                  </figure>
+                  <!-- ESCAPARATE DE PANTALLAS DE FIGMA AL INICIO (3 PANTALLAS CLAVE EN ALTA FIDELIDAD) -->
+                  <div class="figma-showcase-wrapper" role="region" aria-labelledby="titulo-escaparate-figma">
+                    <div style="text-align:center; margin-bottom:var(--space-3);">
+                      <span class="section-eyebrow">Vista Previa en Alta Fidelidad (Figma)</span>
+                      <h3 id="titulo-escaparate-figma" style="margin-top:4px; margin-bottom:4px;">Las 3 Pantallas Clave
+                        de Bolsillos App</h3>
+                      <p class="text-small text-secondary" style="margin:0;">
+                        Previsualización interactiva con los componentes reales del Sistema de Diseño. Al guardar tus
+                        exportaciones de Figma en <code>img/</code>, se mostrarán automáticamente dentro de cada
+                        dispositivo.
+                      </p>
+                    </div>
+
+                    <div class="figma-phones-grid">
+                      <!-- Pantalla Figma 1: Dashboard de Bolsillos Separados -->
+                      <figure class="media-figure" style="margin:0; border:none; background:transparent; padding:0;">
+                        <div class="phone-frame">
+                          <div class="phone-notch" aria-hidden="true"></div>
+                          <img src="img/portada-alta-fidelidad.png"
+                            alt="Pantalla 1 en Figma: Dashboard de Bolsillos separados mostrando Sueldo Fijo y Emprendimientos sin saldo consolidado"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                          <div class="phone-screen-ui">
+                            <div>
+                              <span class="pendiente-tag" style="width:100%; justify-content:center;">📱 Figma 1:
+                                img/portada-alta-fidelidad.png</span>
+                              <h4 style="font-size:0.95rem; margin-bottom:4px;">Mis Bolsillos Separados</h4>
+                              <p class="text-small text-secondary" style="font-size:0.75rem; margin-bottom:12px;">Sin
+                                saldo total unificado (Previene falsa liquidez — HU1)</p>
+
+                              <div class="pocket-mini-card">
+                                <span class="pocket-mini-title">💼 Sueldo Fijo (Dinero Libre Personal)</span>
+                                <span class="pocket-mini-amount">Gs. 1.450.000</span>
+                              </div>
+
+                              <div class="pocket-mini-card pocket-biz">
+                                <span class="pocket-mini-title">🧁 Emprendimiento 1: Repostería</span>
+                                <span class="pocket-mini-amount">Gs. 2.180.000</span>
+                                <span class="text-small"
+                                  style="display:block; font-size:0.72rem; color:var(--color-success);">✓ Balance mes:
+                                  +Gs. 640.000</span>
+                              </div>
+
+                              <div class="pocket-mini-card pocket-biz">
+                                <span class="pocket-mini-title">📦 Emprendimiento 2: Showroom</span>
+                                <span class="pocket-mini-amount">Gs. 890.000</span>
+                              </div>
+                            </div>
+                            <div
+                              style="text-align:center; padding-top:8px; border-top:1px solid var(--color-border-soft);">
+                              <span class="btn btn-primary"
+                                style="width:100%; min-height:42px; font-size:0.875rem; padding:8px;">+ Registrar
+                                Movimiento</span>
+                            </div>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <strong>Pantalla 1 — Fronteras Visuales (HU1/HU3):</strong> Saldos separados por defecto en la
+                          pantalla principal sin clics ni scroll.
+                        </figcaption>
+                      </figure>
+
+                      <!-- Pantalla Figma 2: Registro Ultrarrápido en <= 10 segundos -->
+                      <figure class="media-figure" style="margin:0; border:none; background:transparent; padding:0;">
+                        <div class="phone-frame">
+                          <div class="phone-notch" aria-hidden="true"></div>
+                          <img src="img/figma-hero-registro.png"
+                            alt="Pantalla 2 en Figma: Registro ultrarrápido de movimiento con solo 2 campos obligatorios (Monto y Bolsillo)"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                          <div class="phone-screen-ui">
+                            <div>
+                              <span class="pendiente-tag" style="width:100%; justify-content:center;">📱 Figma 2:
+                                img/figma-hero-registro.png</span>
+                              <h4 style="font-size:0.95rem; margin-bottom:4px;">Registro Rápido (≤ 10 seg)</h4>
+                              <p class="text-small text-secondary" style="font-size:0.75rem; margin-bottom:12px;">Máximo
+                                2 campos obligatorios (HU2 / RF3)</p>
+
+                              <div class="pocket-mini-card" style="border-left-color:var(--color-action);">
+                                <span class="pocket-mini-title">1. Monto del movimiento *</span>
+                                <span class="pocket-mini-amount" style="color:var(--color-action);">Gs. 85.000</span>
+                              </div>
+
+                              <div class="pocket-mini-card">
+                                <span class="pocket-mini-title">2. Seleccionar Bolsillo *</span>
+                                <span
+                                  style="display:inline-block; background:var(--color-action-soft); color:var(--color-action); font-weight:700; font-size:0.8rem; padding:4px 8px; border-radius:4px; margin-top:4px;">✓
+                                  🧁 Repostería</span>
+                              </div>
+
+                              <div class="pocket-mini-card" style="border-style:dashed; border-left-width:1px;">
+                                <span class="pocket-mini-title">Nota rápida (Opcional — HU6)</span>
+                                <span class="text-small text-secondary" style="font-size:0.75rem;">Ej. Compra de harina
+                                  y chocolate</span>
+                              </div>
+                            </div>
+                            <div
+                              style="text-align:center; padding-top:8px; border-top:1px solid var(--color-border-soft);">
+                              <span class="btn btn-primary"
+                                style="width:100%; min-height:42px; font-size:0.875rem; padding:8px;">Guardar en 1
+                                toque</span>
+                            </div>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <strong>Pantalla 2 — Fricción Cero (HU2):</strong> Solo 2 campos obligatorios con labels
+                          siempre visibles y áreas táctiles ≥ 48×48pt.
+                        </figcaption>
+                      </figure>
+
+                      <!-- Pantalla Figma 3: Alerta de Sobregiro Empática -->
+                      <figure class="media-figure" style="margin:0; border:none; background:transparent; padding:0;">
+                        <div class="phone-frame">
+                          <div class="phone-notch" aria-hidden="true"></div>
+                          <img src="img/figma-hero-alerta.png"
+                            alt="Pantalla 3 en Figma: Alerta de sobregiro en lenguaje coloquial cuando un gasto supera el disponible del bolsillo"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                          <div class="phone-screen-ui">
+                            <div>
+                              <span class="pendiente-tag" style="width:100%; justify-content:center;">📱 Figma 3:
+                                img/figma-hero-alerta.png</span>
+                              <h4 style="font-size:0.95rem; margin-bottom:4px;">Protección de Capital</h4>
+                              <p class="text-small text-secondary" style="font-size:0.75rem; margin-bottom:12px;">
+                                Prevención frente al mostrador (HU5)</p>
+
+                              <div
+                                style="background:var(--color-error-bg); border:1.5px solid var(--color-error); border-radius:var(--radius-sm); padding:12px; margin-bottom:12px;">
+                                <span
+                                  style="display:block; font-weight:700; color:var(--color-error); font-size:0.85rem; margin-bottom:6px;">⚠️
+                                  ¡Cuidado! Vas a superar tu bolsillo</span>
+                                <p class="text-small"
+                                  style="font-size:0.78rem; margin:0; color:var(--color-text-primary);">
+                                  Este gasto de <strong>Gs. 250.000</strong> supera por <strong>Gs. 45.000</strong> tu
+                                  disponible en <em>"Sueldo Personal"</em>. Si continuás, estarías usando dinero de tus
+                                  emprendimientos.
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              style="display:flex; flex-direction:column; gap:8px; padding-top:8px; border-top:1px solid var(--color-border-soft);">
+                              <span class="btn btn-primary"
+                                style="width:100%; min-height:42px; font-size:0.82rem; padding:8px;">Cancelar y proteger
+                                negocio</span>
+                              <span class="btn btn-secondary"
+                                style="width:100%; min-height:42px; font-size:0.82rem; padding:8px;">Continuar de todos
+                                modos</span>
+                            </div>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <strong>Pantalla 3 — Alerta de Sobregiro (HU5):</strong> Advertencia con ícono ⚠️ + lenguaje
+                          coloquial y 1 solo botón primario.
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+    </section>
+
+    <!-- SECCIÓN 2: INVESTIGACIÓN — EMPATIZAR -->
+    <section id="investigacion" class="section section-alt" aria-labelledby="titulo-investigacion">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">2. Fase Empatizar</span>
+          <h2 id="titulo-investigacion">Investigación con Usuarios</h2>
+          <p class="lead">
+            <strong>Objetivo de investigación:</strong> Averiguar cómo las personas con múltiples ingresos manejan su
+            dinero día a día y validar si el desorden deriva de falta de organización o de la fricción excesiva (carga
+            cognitiva) de las herramientas actuales.
+          </p>
+        </div>
+
+        <h3>Métodos utilizados y rigor metodológico</h3>
+        <div class="grid-3">
+          <article class="card">
+            <h4>📊 23 Encuestas cuantitativas</h4>
+            <p class="text-secondary" style="margin-bottom:0;">
+              Aplicadas a personas económicamente activas con múltiples fuentes de ingreso, registrando un promedio de
+              <strong>2,22 fuentes de ingreso por persona</strong>.
+            </p>
+          </article>
+
+          <article class="card">
+            <h4>🎙️ 2 Entrevistas cualitativas en profundidad</h4>
+            <p class="text-secondary" style="margin-bottom:0;">
+              Realizadas a usuarias con perfiles híbridos de alta carga operativa (trabajo fijo en el sector de
+              tecnología + <strong>2 emprendimientos paralelos</strong>).
+            </p>
+          </article>
+
+          <article class="card card-highlight">
+            <h4>🤖 Uso transparente de IA en investigación</h4>
+            <p class="text-secondary" style="margin-bottom:0;">
+              Se utilizó <strong>Gemini</strong> para normalizar transcripciones crudas, generar distribuciones
+              numéricas y extraer etiquetas para el <em>Affinity Mapping</em>, <strong>verificando manualmente cada
+                resultado contra las citas textuales originales</strong>.
+            </p>
+          </article>
+        </div>
+
+        <h3>Hallazgos principales y evidencia cuantitativa/cualitativa</h3>
+        <div class="metric-grid" role="list" aria-label="Métricas principales de hallazgos">
+          <article class="metric-card" role="listitem">
+            <div>
+              <div class="metric-value">87%</div>
+              <div class="metric-sub">20 de 23 encuestados</div>
+              <p style="margin-bottom:0;">
+                Sienten una <strong>"falsa sensación"</strong> de tener más dinero del que realmente pueden gastar al
+                ver su saldo bancario unificado.
+              </p>
+            </div>
+          </article>
+
+          <article class="metric-card" role="listitem">
+            <div>
+              <div class="metric-value">82,6%</div>
+              <div class="metric-sub">19 de 23 encuestados</div>
+              <p style="margin-bottom:0;">
+                Admiten <strong>mezclar fondos personales y del negocio</strong> ("a veces" o más), corroborado por 1 de
+                2 entrevistadas que usa su sueldo fijo para reponer insumos.
+              </p>
+            </div>
+          </article>
+
+          <article class="metric-card" role="listitem">
+            <div>
+              <div class="metric-value">82,6%</div>
+              <div class="metric-sub">19 de 23 encuestados</div>
+              <p style="margin-bottom:0;">
+                Reportan dificultad de media a muy difícil para identificar a qué fuente pertenece su saldo; <strong>2
+                  de 2 entrevistadas</strong> no tienen certeza de si sus emprendimientos dejan ganancias reales.
+              </p>
+            </div>
+          </article>
+
+          <article class="metric-card" role="listitem">
+            <div>
+              <div class="metric-value">39,1%</div>
+              <div class="metric-sub">9 de 23 encuestados</div>
+              <p style="margin-bottom:0;">
+                Condicionan clasificar sus ingresos a que sea un proceso <strong>"muy rápido y fácil"</strong>; 2 de 2
+                entrevistadas expresaron frustración con el registro manual.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <h3>Voces de las usuarias (Citas textuales verificadas)</h3>
+        <div class="quote-grid">
+          <blockquote class="user-quote">
+            <p>"Lo primero que me genera es miedo de estar gastando dinero que no debería, lo que es para reponer mis
+              productos por ejemplo."</p>
+            <footer>— Participante de Entrevista 2</footer>
+          </blockquote>
+
+          <blockquote class="user-quote">
+            <p>"Tedioso, porque no hay un plan perfecto donde pueda registrarlo perfectamente. [...] Normalmente se
+              encuentran inconsistencias."</p>
+            <footer>— Participante de Entrevista 1</footer>
+          </blockquote>
+
+          <blockquote class="user-quote">
+            <p>"La verdad no sé si mis emprendimientos me dejan realmente ganancias."</p>
+            <footer>— Participante de Entrevista Cualitativa</footer>
+          </blockquote>
+        </div>
+
+        <h3>Síntesis del Insight Accionable (Estructura de 6 partes)</h3>
+        <article class="card card-highlight">
+          <div class="grid-2">
+            <div>
+              <h4>1. Titular del Insight</h4>
+              <p><strong>La fricción de los métodos de registro manual genera una falsa sensación de liquidez que
+                  termina descapitalizando los emprendimientos.</strong></p>
+
+              <h4>2. Qué observamos (Evidencia empírica)</h4>
+              <p>19 de 23 encuestados mezclan fondos por dificultad para separarlos y el 87% siente una falsa sensación
+                de riqueza ante el saldo unificado.</p>
+
+              <h4>3. Cita respaldatoria clave</h4>
+              <p><em>"Lo primero que me genera es miedo de estar gastando dinero que no debería, lo que es para reponer
+                  mis productos por ejemplo."</em> (Entrevista 2).</p>
+            </div>
+
+            <div>
+              <h4>4. Por qué importa (Impacto en la vida y negocio)</h4>
+              <p>Sin fronteras visuales claras y de esfuerzo casi nulo, el usuario asume gastos que el emprendimiento no
+                puede sostener y opera a pérdida sin saberlo.</p>
+
+              <h4>5. Qué no sabemos con certeza (Incógnita a validar)</h4>
+              <p>El límite exacto de tolerancia a la carga manual (clics o segundos máximos) antes del abandono
+                definitivo.</p>
+
+              <h4>6. Decisión de diseño tomada a partir de la evidencia</h4>
+              <p style="margin-bottom:0;">
+                <span class="badge-status badge-success">✓ Decisión UX</span>
+                <strong>Enfocar el diseño en la separación visual inmediata y el registro ultrarrápido en lugar de
+                  reportes contables complejos.</strong>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <h3>Evidencia visual de la investigación</h3>
+        <div class="grid-2">
+          <figure class="media-figure">
+            <img src="img/graficos-encuesta.png"
+              alt="Gráficos estadísticos de las 23 encuestas sobre mezcla de fondos y falsa sensación de liquidez"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder pendiente" style="display:flex;">
+              <span class="pendiente-tag">⚠️ Evidencia Visual Pendiente</span>
+              <strong>Gráficos de la Encuesta Cuantitativa (N = 23)</strong>
+              <span class="text-small text-secondary">Colocar imagen en: <code>img/graficos-encuesta.png</code></span>
+            </div>
+            <figcaption>
+              Figura 2.1: Distribución de respuestas de las 23 encuestas sobre percepción de saldo unificado y mezcla de
+              capital.
+            </figcaption>
+          </figure>
+
+          <figure class="media-figure">
+            <img src="img/mapa-afinidad.png"
+              alt="Mapa de afinidad con agrupaciones de hallazgos cualitativos de las entrevistas"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder pendiente" style="display:flex;">
+              <span class="pendiente-tag">⚠️ Evidencia Visual Pendiente</span>
+              <strong>Mapa de Afinidad (Affinity Mapping)</strong>
+              <span class="text-small text-secondary">Colocar imagen en: <code>img/mapa-afinidad.png</code></span>
+            </div>
+            <figcaption>
+              Figura 2.2: Agrupación temática de citas y dolores extraídos de las entrevistas en profundidad.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: DEFINICIÓN DEL PROBLEMA — DEFINIR -->
+    <section id="definicion" class="section" aria-labelledby="titulo-definicion">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">3. Fase Definir</span>
+          <h2 id="titulo-definicion">Definición del Problema y Trazabilidad</h2>
+          <p class="lead">
+            Sintetizamos la investigación en una Persona primaria basada en datos reales, su mapa de empatía, el viaje
+            crítico de compra de insumos y la matriz de trazabilidad hacia requisitos verificables.
+          </p>
+        </div>
+
+        <h3>Persona Principal: Sofía — "La Emprendedora Reactiva"</h3>
+        <article class="card">
+          <div class="grid-3">
+            <div>
+              <h4>Contexto cotidiano</h4>
+              <p>Trabajo fijo remoto de lunes a viernes y alta carga laboral en fines de semana con dos emprendimientos
+                paralelos. (Perfil complementario identificado: <em>"La Organizadora Frustrada"</em>).</p>
+            </div>
+            <div>
+              <h4>Meta principal</h4>
+              <p>Evitar descapitalizar su negocio y saber con exactitud cuánto dinero libre puede gastar hoy sin miedo a
+                comprometer la reposición de mercadería.</p>
+            </div>
+            <div>
+              <h4>Comportamiento financiero</h4>
+              <p style="margin-bottom:0;">Abandona registros manuales por alta fricción; consulta sus números de forma
+                reactiva justo antes de comprar y subsidia su negocio con su sueldo por error.</p>
+            </div>
+          </div>
+
+          <h4 style="margin-top:var(--space-3);">Mapa de Empatía de Sofía (Grilla 2×3)</h4>
+          <div class="empathy-grid" role="region" aria-label="Mapa de empatía de Sofía en 6 cuadrantes">
+            <div class="empathy-cell">
+              <h4>💬 ¿Qué Dice?</h4>
+              <ul>
+                <li>"Bastante frustración, el no poder tener un método práctico de registro".</li>
+                <li>"No sé si mis emprendimientos me dejan realmente ganancias".</li>
+              </ul>
+            </div>
+
+            <div class="empathy-cell">
+              <h4>💭 ¿Qué Piensa?</h4>
+              <ul>
+                <li>"No hay un plan perfecto donde pueda registrarlo".</li>
+                <li>"Tengo miedo de gastar dinero que es para reponer productos".</li>
+              </ul>
+            </div>
+
+            <div class="empathy-cell">
+              <h4>🛠️ ¿Qué Hace?</h4>
+              <ul>
+                <li>Anota en cuadernos o apps dispersas de manera intermitente.</li>
+                <li>Registra deudas y termina usando su sueldo fijo para reponer ingredientes.</li>
+              </ul>
+            </div>
+
+            <div class="empathy-cell">
+              <h4>❤️ ¿Qué Siente?</h4>
+              <ul>
+                <li>Frustración constante por inconsistencias en sus cuentas.</li>
+                <li>Desesperación, miedo a descapitalizarse y abrumamiento.</li>
+              </ul>
+            </div>
+
+            <div class="empathy-cell">
+              <h4>⚠️ Esfuerzos (Dolores)</h4>
+              <ul>
+                <li>Perder tiempo valioso anotando gastos al final de un día agotador.</li>
+                <li>Tener que calcular mentalmente su liquidez frente al mostrador.</li>
+              </ul>
+            </div>
+
+            <div class="empathy-cell">
+              <h4>🎯 Resultados Deseados (Necesidades)</h4>
+              <ul>
+                <li>Conocer su margen real de ganancias y liquidez libre invirtiendo solo unos segundos.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <h3>Mapa de Viaje del Usuario (User Journey Map — 3 Etapas)</h3>
+        <div class="table-wrapper" role="region" aria-label="Tabla del mapa de viaje del usuario" tabindex="0">
+          <table>
+            <caption>Recorrido actual de Sofía al gestionar cobros y compras de insumos</caption>
+            <thead>
+              <tr>
+                <th scope="col">Etapa del Viaje</th>
+                <th scope="col">Acción de la Usuaria</th>
+                <th scope="col">Impacto Emocional y Cognitivo</th>
+                <th scope="col">Nivel de Fricción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Antes</strong><br><span class="text-small text-secondary">(Recepción y revisión)</span>
+                </td>
+                <td>Abre la aplicación de su banco y observa un único saldo bancario unificado donde conviven su sueldo
+                  y las ventas.</td>
+                <td>Experimenta una <strong>falsa sensación de liquidez</strong> seguida inmediatamente de miedo a
+                  gastar dinero comprometido.</td>
+                <td><span class="badge-sev-3">⚠️ Severidad 3 — Alta incertidumbre</span></td>
+              </tr>
+              <tr>
+                <td><strong>2. Durante</strong><br><span class="text-small text-secondary">(Intento de gestión y
+                    compras)</span></td>
+                <td>Frente al mostrador necesita comprar insumos urgentes; intenta calcular mentalmente cuánto pertenece
+                  al negocio bajo estrés.</td>
+                <td>Termina pagando y <strong>mezclando fondos personales y del emprendimiento</strong> por urgencia
+                  operativa.</td>
+                <td><span class="badge-sev-4">⛔ PUNTO DE FRICCIÓN CRÍTICO</span></td>
+              </tr>
+              <tr>
+                <td><strong>3. Después</strong><br><span class="text-small text-secondary">(Cierre de mes)</span></td>
+                <td>Intenta conciliar lo que tiene en el banco con sus notas en papel o planillas.</td>
+                <td>Encuentra inconsistencias insalvables entre lo real y lo anotado → <strong>abandona el registro con
+                    desesperación</strong>.</td>
+                <td><span class="badge-sev-4">⛔ Abandono de herramienta</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Punto de Vista (POV) y Pregunta "¿Cómo podríamos...?" (HMW)</h3>
+        <div class="pov-hmw-grid">
+          <article class="card card-highlight">
+            <h4>🎯 Punto de Vista (Point of View — POV)</h4>
+            <p style="margin-bottom:0;">
+              La emprendedora con múltiples fuentes de ingreso <strong>necesita</strong> trazar fronteras invisibles
+              pero estrictas sobre su dinero disponible en tiempo real, <strong>debido a que</strong> ver su saldo
+              bancario unificado le genera una "falsa ilusión de riqueza" que la empuja a devorar los insumos de su
+              propio negocio por accidente.
+            </p>
+          </article>
+
+          <article class="card card-highlight">
+            <h4>💡 Pregunta "¿Cómo podríamos...?" (How Might We — HMW)</h4>
+            <p style="margin-bottom:0;">
+              <strong>¿Cómo podríamos</strong> separar perceptualmente los fondos de distintas fuentes desde el segundo
+              en que ingresan a la cuenta, <strong>para que</strong> el usuario pueda tomar decisiones de compra
+              inmediatas en el mostrador sin miedo a descapitalizarse?
+            </p>
+          </article>
+        </div>
+
+        <h3>Matriz de Trazabilidad (Hallazgo → Historia de Usuario → Requisitos RF y RNF)</h3>
+        <div class="table-wrapper" role="region" aria-label="Tabla de trazabilidad de hallazgos a requisitos"
+          tabindex="0">
+          <table>
+            <caption>Conexión directa entre la evidencia empírica y las decisiones funcionales de Bolsillos App
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Hallazgo de Investigación</th>
+                <th scope="col">Historia de Usuario (HU)</th>
+                <th scope="col">Requisito Funcional (RF)</th>
+                <th scope="col">Requisito No Funcional (RNF)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>87% (20/23)</strong> sufre "falsa sensación de liquidez" al ver el saldo bancario unificado.
+                </td>
+                <td><strong>HU1:</strong> Como emprendedora reactiva, quiero conocer instantáneamente el dinero libre
+                  para gastos personales, para evitar usar fondos del negocio por error.</td>
+                <td><strong>RF1 / RF2:</strong> Crear "bolsillos" independientes por fuente y mostrar saldos separados
+                  por defecto (ocultando el saldo consolidado total).</td>
+                <td><strong>RNF (Usabilidad):</strong> Saldos separados visibles en la pantalla principal sin necesidad
+                  de clics ni scroll.</td>
+              </tr>
+              <tr>
+                <td><strong>39,1% (9/23)</strong> exige rapidez; 2/2 entrevistadas sufren frustración con el registro
+                  manual.</td>
+                <td><strong>HU2:</strong> Como organizadora frustrada, quiero asignar fuente de origen al recibir un
+                  ingreso, para evitar cruces e inconsistencias a fin de mes.</td>
+                <td><strong>RF3:</strong> Registrar movimiento financiero con un máximo de <strong>2 campos
+                    obligatorios</strong> (monto y bolsillo destino/origen).</td>
+                <td><strong>RNF (Eficiencia):</strong> Tiempo promedio de registro de una transacción <strong>≤ 10
+                    segundos</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>82,6% (19/23)</strong> no distingue origen de su saldo; 2/2 entrevistadas desconocen si
+                  tienen ganancias reales.</td>
+                <td><strong>HU3:</strong> Como emprendedora reactiva, quiero ver el balance (ingresos menos egresos) por
+                  negocio separado de mi sueldo fijo.</td>
+                <td><strong>RF4 / RF5:</strong> Cálculo automático de balance neto por bolsillo filtrado por rango de
+                  fecha.</td>
+                <td><strong>RNF (Rendimiento):</strong> Actualización visual del balance en <strong>&lt; 2
+                    segundos</strong> tras cada registro.</td>
+              </tr>
+              <tr>
+                <td><strong>Inconsistencias frecuentes</strong> en registros y miedo constante a gastar dinero de
+                  reposición.</td>
+                <td><strong>HU4 / HU5:</strong> Como usuaria, quiero corregir errores de carga y recibir una advertencia
+                  clara antes de gastar más de lo que tiene un bolsillo.</td>
+                <td><strong>RF6 / RF7:</strong> Editar transacciones históricas + Alerta de sobregiro con opciones
+                  explícitas <em>"Cancelar"</em> o <em>"Continuar de todos modos"</em>.</td>
+                <td><strong>RNF (Datos y UX):</strong> Log de trazabilidad de ediciones históricas y alerta redactada en
+                  lenguaje coloquial no punitivo acompañado de ícono ⚠️.</td>
+              </tr>
+              <tr>
+                <td><strong>Hallazgos complementarios</strong> (contexto de compras de insumos y respaldo externo).</td>
+                <td><strong>HU6, HU7 y HU10:</strong> Notas rápidas de contexto, recordatorio de reposición y
+                  portabilidad de datos.</td>
+                <td><strong>RF Complementarios:</strong> Notas cortas opcionales (HU6), lista de insumos pendientes por
+                  bolsillo (HU7) y exportación de historial a CSV (HU10).</td>
+                <td><strong>RNF (Compatibilidad):</strong> Teclado predictivo móvil nativo y archivo CSV codificado en
+                  estándar <strong>UTF-8</strong>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- FIN BLOQUE INTEGRANTE 1 / INICIO BLOQUE INTEGRANTE 2 (Secciones 4 y 5)-->
+    <!-- ===================================================================== -->
+
+    <!-- SECCIÓN 4: IDEACIÓN — IDEAR -->
+    <section id="ideacion" class="section section-alt" aria-labelledby="titulo-ideacion">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">4. Fase Idear</span>
+          <h2 id="titulo-ideacion">Ideación y Exploración de Alternativas</h2>
+          <p class="lead">
+            Exploramos 8 enfoques divergentes mediante sesiones de lluvia de ideas y <em>Crazy 8s</em> para responder a
+            la pregunta HMW antes de converger en la arquitectura de la pantalla principal.
+          </p>
+        </div>
+
+        <h3>Las 8 alternativas exploradas para la pantalla principal (Crazy 8s)</h3>
+        <div class="crazy8-grid" role="list" aria-label="Alternativas exploradas en Crazy 8s">
+          <article class="crazy8-card" role="listitem">
+            <span class="crazy8-number">1</span>
+            <h4>Dashboard de "Bolsillos"</h4>
+            <p class="text-secondary" style="margin-bottom:0;">Tarjetas separadas por fuente de ingreso sin mostrar
+              saldo total consolidado + botón "+" central de acción rápida.</p>
+          </article>
+
+          <article class="crazy8-card" role="listitem">
+            <span class="crazy8-number">2</span>
+            <h4>Acción Primero</h4>
+            <p class="text-secondary" style="margin-bottom:0;">Teclado numérico gigante directamente en la pantalla
+              inicial (estilo calculadora rápida) para registrar en 3 segundos.</p>
+          </article>
+
+          <article class="crazy8-card" role="listitem">
+            <span class="crazy8-number">3</span>
+            <h4>Carrusel de Tarjetas</h4>
+            <p class="text-secondary" style="margin-bottom:0;">Navegación horizontal por gestos (<em>swipe</em>)
+              mostrando únicamente un bolsillo a la vez a pantalla completa.</p>
+          </article>
+
+          <article class="crazy8-card" role="listitem">
+            <span class="crazy8-number">4</span>
+            <h4>Semáforo "Safe to Spend"</h4>
+            <p class="text-secondary" style="margin-bottom:0;">Barras de estado visual (verde, amarillo y rojo +
+              etiquetas de texto) indicando salud de liquidez de cada bolsillo.</p>
+          </article>
+
+          <article class="crazy8-card" role="listitem">
+            <span class="crazy8-number">5</span>
+            <h4>Gráfico de Dona Interactivo</h4>
+            <p class="text-secondary" style="margin-bottom:0;">Visualización circular proporcional donde tocar cada
+              segmento despliega el disponible de esa fuente.</p>
+          </article>
+
+          <article class="crazy8-card" role="listitem">
+            <span class="crazy8-number">6</span>
+            <h4>Interfaz Conversacional (Chat)</h4>
+            <p class="text-secondary" style="margin-bottom:0;">Registro mediante mensajes rápidos tipo chat ("+50.000 en
+              Repostería") con respuestas automáticas de saldo.</p>
+          </article>
+
+          <article class="crazy8-card" role="listitem">
+            <span class="crazy8-number">7</span>
+            <h4>Arrastrar y Soltar Billetes</h4>
+            <p class="text-secondary" style="margin-bottom:0;">Metáfora gamificada de arrastrar monedas o billetes
+              virtuales hacia alcancías separadas.</p>
+          </article>
+
+          <article class="crazy8-card" role="listitem">
+            <span class="crazy8-number">8</span>
+            <h4>Dashboard Dividido</h4>
+            <p class="text-secondary" style="margin-bottom:0;">Mitad superior con saldos por bolsillo y mitad inferior
+              con lista interactiva de insumos pendientes de compra.</p>
+          </article>
+        </div>
+
+        <!-- Bloque Pendiente para Integrante 2 -->
+        <div class="grid-2">
+          <figure class="media-figure">
+            <img src="img/crazy8s.jpg"
+              alt="Fotografías de los bocetos en papel de la sesión de lluvia de ideas y Crazy 8s del equipo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder pendiente" style="display:flex;">
+              <span class="pendiente-tag">⚠️ PENDIENTE — Integrante 2</span>
+              <strong>Fotografías de Bocetos y Crazy 8s en Papel</strong>
+              <span class="text-small text-secondary">Subir archivo en: <code>img/crazy8s.jpg</code></span>
+            </div>
+            <figcaption>
+              Figura 4.1: Registro fotográfico de las hojas de Crazy 8s elaboradas por los integrantes del equipo.
+            </figcaption>
+          </figure>
+
+          <article class="pendiente">
+            <span class="pendiente-tag">⚠️ PENDIENTE — Integrante 2</span>
+            <h3>Criterio de selección de la propuesta final</h3>
+            <p>
+              <strong>[Completar por Integrante 2]:</strong> Redactar aquí el párrafo justificando por qué se seleccionó
+              la combinación ganadora (<em>Alternativa 1: Dashboard de Bolsillos con tarjetas separadas sin saldo
+                consolidado + botón "+" central</em> combinada con elementos de rapidez de la Alternativa 2) frente a
+              las demás opciones (por ejemplo, por qué se descartó el gráfico de dona que volvía a unificar visualmente
+              el todo o el chat que requería tipeo excesivo).
+            </p>
+            <ul class="text-small text-secondary" style="margin-bottom:0;">
+              <li>Vincular la decisión con el RNF de <strong>visibilidad sin scroll (HU1)</strong>.</li>
+              <li>Vincular con el RNF de <strong>registro en ≤ 10 segundos con solo 2 campos obligatorios
+                  (HU2)</strong>.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: EVOLUCIÓN DEL PROTOTIPO — PROTOTIPAR -->
+    <section id="prototipos" class="section" aria-labelledby="titulo-prototipos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">5. Fase Prototipar</span>
+          <h2 id="titulo-prototipos">Evolución del Prototipo y Sistema de Diseño</h2>
+          <p class="lead">
+            Documentamos la evolución iterativa de las tareas críticas a través de tres niveles de fidelidad (Papel →
+            Wireframes Lo-Fi → Alta Fidelidad) y el Sistema de Diseño estandarizado de <strong>Bolsillos App</strong>.
+          </p>
+        </div>
+
+        <!-- Enlace pendiente al prototipo navegable en Figma -->
+        <div class="pendiente"
+          style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:var(--space-2);">
+          <div>
+            <span class="pendiente-tag">⚠️ PENDIENTE — Integrante 2</span>
+            <h3 style="margin:0 0 4px 0;">Prototipo Navegable en Alta Fidelidad (Figma)</h3>
+            <p class="text-small text-secondary" style="margin:0;">Reemplazar el atributo <code>href</code> con la URL
+              pública del prototipo interactivo en Figma.</p>
+          </div>
+          <a href="#prototipos" class="btn btn-primary"
+            aria-label="Abrir prototipo interactivo de Bolsillos App en Figma (Enlace pendiente)">
+            Abrir Prototipo Navegable en Figma [PENDIENTE]
+          </a>
+        </div>
+
+        <h3>Evolución tarea por tarea (Papel → Wireframes → Alta Fidelidad)</h3>
+
+        <!-- TAREA 1 -->
+        <article class="proto-evolution-card" aria-labelledby="proto-tarea-1">
+          <span class="pendiente-tag">⚠️ PENDIENTE — Integrante 2</span>
+          <h4 id="proto-tarea-1" style="font-size:1.25rem;">Tarea 1: Consultar dinero libre personal vs. capital de
+            emprendimientos (HU1 / HU3)</h4>
+          <p class="text-secondary">Objetivo de la tarea: Verificar en menos de 5 segundos cuánto dinero libre hay en el
+            bolsillo personal sin confundirlo con el fondo de reposición de insumos.</p>
+
+          <div class="proto-columns">
+            <div class="proto-stage">
+              <h4>1. Prototipo en Papel</h4>
+              <figure class="media-figure" style="margin:var(--space-1) 0;">
+                <img src="img/tarea1-papel.jpg"
+                  alt="Boceto en papel de la Tarea 1 mostrando tarjetas de bolsillos dibujadas a mano"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder" style="min-height:160px;">
+                  <strong>Captura Papel — Tarea 1</strong>
+                  <span class="text-small"><code>img/tarea1-papel.jpg</code></span>
+                </div>
+                <figcaption>Boceto inicial de tarjetas de saldo.</figcaption>
+              </figure>
+            </div>
+
+            <div class="proto-stage">
+              <h4>2. Wireframe (Baja/Media Fidelidad)</h4>
+              <figure class="media-figure" style="margin:var(--space-1) 0;">
+                <img src="img/tarea1-wireframe.png"
+                  alt="Wireframe en escala de grises de la Tarea 1 con jerarquía de tarjetas separadas"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder" style="min-height:160px;">
+                  <strong>Captura Wireframe — Tarea 1</strong>
+                  <span class="text-small"><code>img/tarea1-wireframe.png</code></span>
+                </div>
+                <figcaption>Ajuste de jerarquía y eliminación de totalizador.</figcaption>
+              </figure>
+            </div>
+
+            <div class="proto-stage">
+              <h4>3. Alta Fidelidad (UI Final)</h4>
+              <figure class="media-figure" style="margin:var(--space-1) 0;">
+                <img src="img/tarea1-alta.png"
+                  alt="Pantalla en alta fidelidad de la Tarea 1 aplicando paleta oficial #456EFE y tipografía Inter"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder" style="min-height:160px;">
+                  <strong>Captura Alta Fidelidad — Tarea 1</strong>
+                  <span class="text-small"><code>img/tarea1-alta.png</code></span>
+                </div>
+                <figcaption>Aplicación del Sistema de Diseño y contraste AA.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="proto-changelog">
+            <div class="pendiente" style="margin:0;">
+              <h4>🔄 Qué cambió de Papel a Wireframe y por qué</h4>
+              <p class="text-small" style="margin:0;"><strong>[Completar por Integrante 2]:</strong> Explicar qué
+                elementos se descartaron o reubicaron tras evaluar el prototipo en papel (ej. ocultar definitivamente el
+                saldo consolidado que generaba falsa liquidez).</p>
+            </div>
+            <div class="pendiente" style="margin:0;">
+              <h4>🔄 Qué cambió de Wireframe a Alta Fidelidad y por qué</h4>
+              <p class="text-small" style="margin:0;"><strong>[Completar por Integrante 2]:</strong> Explicar mejoras
+                tras la prueba con wireframes (ej. diferenciación visual entre ingresos/egresos del bolsillo y áreas
+                táctiles de 48×48pt).</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- TAREA 2 -->
+        <article class="proto-evolution-card" aria-labelledby="proto-tarea-2">
+          <span class="pendiente-tag">⚠️ PENDIENTE — Integrante 2</span>
+          <h4 id="proto-tarea-2" style="font-size:1.25rem;">Tarea 2: Registrar un ingreso o gasto ultrarrápido asignando
+            su bolsillo de origen (HU2)</h4>
+          <p class="text-secondary">Objetivo de la tarea: Registrar un movimiento en ≤ 10 segundos completando
+            únicamente 2 campos obligatorios (Monto y Bolsillo).</p>
+
+          <div class="proto-columns">
+            <div class="proto-stage">
+              <h4>1. Prototipo en Papel</h4>
+              <figure class="media-figure" style="margin:var(--space-1) 0;">
+                <img src="img/tarea2-papel.jpg" alt="Boceto en papel del formulario de registro rápido de movimiento"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder" style="min-height:160px;">
+                  <strong>Captura Papel — Tarea 2</strong>
+                  <span class="text-small"><code>img/tarea2-papel.jpg</code></span>
+                </div>
+                <figcaption>Formulario inicial en papel.</figcaption>
+              </figure>
+            </div>
+
+            <div class="proto-stage">
+              <h4>2. Wireframe (Baja/Media Fidelidad)</h4>
+              <figure class="media-figure" style="margin:var(--space-1) 0;">
+                <img src="img/tarea2-wireframe.png"
+                  alt="Wireframe del flujo de registro rápido con selector de bolsillo y teclado numérico"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder" style="min-height:160px;">
+                  <strong>Captura Wireframe — Tarea 2</strong>
+                  <span class="text-small"><code>img/tarea2-wireframe.png</code></span>
+                </div>
+                <figcaption>Reducción a 2 campos obligatorios.</figcaption>
+              </figure>
+            </div>
+
+            <div class="proto-stage">
+              <h4>3. Alta Fidelidad (UI Final)</h4>
+              <figure class="media-figure" style="margin:var(--space-1) 0;">
+                <img src="img/tarea2-alta.png"
+                  alt="Pantalla en alta fidelidad del registro rápido con labels visibles y confirmación de éxito #13C999"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder" style="min-height:160px;">
+                  <strong>Captura Alta Fidelidad — Tarea 2</strong>
+                  <span class="text-small"><code>img/tarea2-alta.png</code></span>
+                </div>
+                <figcaption>Inputs con Label fijo, Helper Text y feedback inmediato.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="proto-changelog">
+            <div class="pendiente" style="margin:0;">
+              <h4>🔄 Qué cambió de Papel a Wireframe y por qué</h4>
+              <p class="text-small" style="margin:0;"><strong>[Completar por Integrante 2]:</strong> Detallar cómo se
+                simplificaron campos opcionales (como notas o categorías secundarias) para cumplir la meta de ≤ 10
+                segundos.</p>
+            </div>
+            <div class="pendiente" style="margin:0;">
+              <h4>🔄 Qué cambió de Wireframe a Alta Fidelidad y por qué</h4>
+              <p class="text-small" style="margin:0;"><strong>[Completar por Integrante 2]:</strong> Detallar ajustes en
+                etiquetas visibles, tamaño de botones de selección de bolsillo y feedback de confirmación.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- TAREA 3 -->
+        <article class="proto-evolution-card" aria-labelledby="proto-tarea-3">
+          <span class="pendiente-tag">⚠️ PENDIENTE — Integrante 2</span>
+          <h4 id="proto-tarea-3" style="font-size:1.25rem;">Tarea 3: Afrontar alerta de sobregiro al intentar gastar más
+            del saldo de un bolsillo (HU4 / HU5)</h4>
+          <p class="text-secondary">Objetivo de la tarea: Prevenir que la usuaria use dinero de otro bolsillo por
+            accidente mediante una alerta comprensible en lenguaje coloquial.</p>
+
+          <div class="proto-columns">
+            <div class="proto-stage">
+              <h4>1. Prototipo en Papel</h4>
+              <figure class="media-figure" style="margin:var(--space-1) 0;">
+                <img src="img/tarea3-papel.jpg"
+                  alt="Boceto en papel del diálogo de alerta cuando un gasto supera el saldo del bolsillo"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder" style="min-height:160px;">
+                  <strong>Captura Papel — Tarea 3</strong>
+                  <span class="text-small"><code>img/tarea3-papel.jpg</code></span>
+                </div>
+                <figcaption>Diálogo inicial de advertencia en papel.</figcaption>
+              </figure>
+            </div>
+
+            <div class="proto-stage">
+              <h4>2. Wireframe (Baja/Media Fidelidad)</h4>
+              <figure class="media-figure" style="margin:var(--space-1) 0;">
+                <img src="img/tarea3-wireframe.png"
+                  alt="Wireframe del modal de alerta de sobregiro con opciones Cancelar o Continuar de todos modos"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder" style="min-height:160px;">
+                  <strong>Captura Wireframe — Tarea 3</strong>
+                  <span class="text-small"><code>img/tarea3-wireframe.png</code></span>
+                </div>
+                <figcaption>Clarificación de acciones Cancelar vs. Continuar.</figcaption>
+              </figure>
+            </div>
+
+            <div class="proto-stage">
+              <h4>3. Alta Fidelidad (UI Final)</h4>
+              <figure class="media-figure" style="margin:var(--space-1) 0;">
+                <img src="img/tarea3-alta.png"
+                  alt="Pantalla en alta fidelidad de la alerta de sobregiro con ícono de advertencia, color #FF6363 y jerarquía de botones"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder" style="min-height:160px;">
+                  <strong>Captura Alta Fidelidad — Tarea 3</strong>
+                  <span class="text-small"><code>img/tarea3-alta.png</code></span>
+                </div>
+                <figcaption>Alerta accesible con ícono ⚠️ + texto claro + pesos de botón.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="proto-changelog">
+            <div class="pendiente" style="margin:0;">
+              <h4>🔄 Qué cambió de Papel a Wireframe y por qué</h4>
+              <p class="text-small" style="margin:0;"><strong>[Completar por Integrante 2]:</strong> Explicar el ajuste
+                del mensaje a lenguaje coloquial empático para alertar sin bloquear rígidamente si es una emergencia
+                real.</p>
+            </div>
+            <div class="pendiente" style="margin:0;">
+              <h4>🔄 Qué cambió de Wireframe a Alta Fidelidad y por qué</h4>
+              <p class="text-small" style="margin:0;"><strong>[Completar por Integrante 2]:</strong> Explicar la
+                aplicación de la regla de 1 solo botón primario ("Cancelar / Proteger bolsillo") y acción
+                secundaria/terciaria para "Continuar de todos modos".</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- SISTEMA DE DISEÑO COMPLETO -->
+        <h3>Sistema de Diseño de Bolsillos App</h3>
+        <p>
+          El Sistema de Diseño garantiza consistencia visual, velocidad de lectura frente al mostrador y cumplimiento de
+          accesibilidad WCAG 2.1. Este mismo portafolio está construido utilizando sus tokens oficiales.
+        </p>
+
+        <!-- Tabla de Tokens de Color con Swatches CSS -->
+        <div class="table-wrapper" role="region" aria-label="Tabla de paleta de colores del Sistema de Diseño"
+          tabindex="0">
+          <table>
+            <caption>1. Paleta de Colores Oficial y Accesibilidad Cromatico-Textual</caption>
+            <thead>
+              <tr>
+                <th scope="col">Muestra Visual (Swatch)</th>
+                <th scope="col">Rol en el Sistema</th>
+                <th scope="col">Código HEX</th>
+                <th scope="col">Criterio de Uso y Accesibilidad (WCAG)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="swatch-cell">
+                    <span class="swatch" style="background-color:#456EFE;" aria-hidden="true"></span>
+                    <strong>Acción / Acento</strong>
+                  </div>
+                </td>
+                <td>Botón primario, enlaces activos, foco de teclado e indicadores clave.</td>
+                <td><code>#456EFE</code></td>
+                <td>Reservado para <strong>1 botón primario por pantalla</strong> y elementos interactivos principales.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="swatch-cell">
+                    <span class="swatch" style="background-color:#23303B;" aria-hidden="true"></span>
+                    <strong>Texto Principal</strong>
+                  </div>
+                </td>
+                <td>Titulares, montos de bolsillos y cuerpo de lectura primario.</td>
+                <td><code>#23303B</code></td>
+                <td>Contraste de <strong>11.2:1</strong> sobre fondo blanco <code>#FFFFFF</code> (Cumple nivel AAA).
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="swatch-cell">
+                    <span class="swatch" style="background-color:#8E949A;" aria-hidden="true"></span>
+                    <strong>Texto Secundario</strong>
+                  </div>
+                </td>
+                <td>Metadatos, subtítulos y etiquetas de apoyo.</td>
+                <td><code>#8E949A</code> <span class="text-small text-secondary">(ajustado a <code>#596066</code> en
+                    texto chico)</span></td>
+                <td>Token base <code>#8E949A</code>; en textos menores a 16pt sobre blanco se oscurece a
+                  <code>#596066</code> para garantizar contraste <strong>≥ 4.5:1 (AA)</strong>.</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="swatch-cell">
+                    <span class="swatch" style="background-color:#A4A9AE;" aria-hidden="true"></span>
+                    <strong>Bordes / Tarjetas</strong>
+                  </div>
+                </td>
+                <td>Contornos de inputs, divisores y bordes de tarjetas de bolsillo.</td>
+                <td><code>#A4A9AE</code></td>
+                <td>Delimitación clara de áreas interactivas y contenedores sin sobrecarga visual.</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="swatch-cell">
+                    <span class="swatch" style="background-color:#FFFFFF;" aria-hidden="true"></span>
+                    <strong>Fondo Principal</strong>
+                  </div>
+                </td>
+                <td>Superficie base de pantallas y tarjetas principales.</td>
+                <td><code>#FFFFFF</code></td>
+                <td>Combinado con gris suave <code>#F8F9FA</code> para separar secciones jerárquicamente.</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="swatch-cell">
+                    <span class="swatch" style="background-color:#FF6363;" aria-hidden="true"></span>
+                    <strong>Alerta / Error</strong>
+                  </div>
+                </td>
+                <td>Sobregiro de bolsillo, errores de validación y severidad alta.</td>
+                <td><code>#FF6363</code> <span class="text-small text-secondary">(<code>#D93838</code> en texto)</span>
+                </td>
+                <td><strong>Regla estricta:</strong> Acompañado siempre de ícono (⚠️) y texto descriptivo; nunca
+                  depender solo del color.</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="swatch-cell">
+                    <span class="swatch" style="background-color:#13C999;" aria-hidden="true"></span>
+                    <strong>Éxito / Confirmación</strong>
+                  </div>
+                </td>
+                <td>Confirmación de ingreso registrado y bolsillo saludable.</td>
+                <td><code>#13C999</code> <span class="text-small text-secondary">(<code>#0E8A68</code> en texto)</span>
+                </td>
+                <td>Acompañado de ícono de verificación (✓) y mensaje de confirmación explícito.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tabla de Tipografía, Espaciado, Componentes y Reglas -->
+        <div class="table-wrapper" role="region"
+          aria-label="Tabla de tipografía, espaciado y componentes del Sistema de Diseño" tabindex="0">
+          <table>
+            <caption>2. Especificaciones de Tipografía, Espaciado, Componentes y Reglas de Uso</caption>
+            <thead>
+              <tr>
+                <th scope="col">Dimensión del Sistema</th>
+                <th scope="col">Especificación Técnica</th>
+                <th scope="col">Aplicación en Bolsillos App</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Tipografía (Google Fonts)</strong></td>
+                <td>Familia <code>Inter</code>:<br>• Títulos: <strong>Semibold 24pt</strong><br>• Cuerpo:
+                  <strong>Regular 16pt</strong><br>• Chico / Metadatos: <strong>Regular 14pt</strong></td>
+                <td>Alta legibilidad en pantallas móviles y números tabulares claros para lectura rápida de montos
+                  frente al mostrador.</td>
+              </tr>
+              <tr>
+                <td><strong>Sistema de Espaciado</strong></td>
+                <td>Escala modular en múltiplos de <strong>8pt</strong> (<code>8pt</code>, <code>16pt</code>,
+                  <code>24pt</code>, <code>32pt</code>).</td>
+                <td>Márgenes internos de tarjetas de bolsillo (24pt), separación entre elementos de formulario (16pt) y
+                  microespaciado (8pt).</td>
+              </tr>
+              <tr>
+                <td><strong>Botones (3 Pesos y Estados)</strong></td>
+                <td>• <strong>Primario:</strong> Relleno sólido <code>#456EFE</code> con texto blanco.<br>•
+                  <strong>Secundario:</strong> Fondo transparente y borde 2px <code>#456EFE</code>.<br>•
+                  <strong>Terciario:</strong> Solo texto interactivo.<br>• <strong>Estados:</strong> Default,
+                  Hover/Focus y Disabled.</td>
+                <td>Jerarquía inequívoca de acciones en modales de confirmación y registro de movimientos.</td>
+              </tr>
+              <tr>
+                <td><strong>Inputs de Formulario</strong></td>
+                <td>Estructura obligatoria de 4 capas:<br>1. <strong>Label siempre visible</strong> arriba del
+                  campo.<br>2. <strong>Placeholder</strong> de ejemplo.<br>3. <strong>Helper Text</strong> de
+                  guía.<br>4. <strong>Error Text</strong> con ícono ⚠️.</td>
+                <td>Evita pérdida de contexto al escribir (nunca se usa el placeholder como reemplazo del label).</td>
+              </tr>
+              <tr>
+                <td><strong>Iconografía y Navegación</strong></td>
+                <td>• Iconografía de estilo <strong>Outline</strong> consistente.<br>• <strong>Barra de navegación
+                    inferior</strong> fija con <strong>4 accesos</strong> principales.</td>
+                <td>Acceso con el pulgar a: 1. Bolsillos (Inicio), 2. Movimientos, 3. Insumos Pendientes y 4.
+                  Ajustes/Exportar CSV.</td>
+              </tr>
+              <tr>
+                <td><strong>Reglas de Oro de Usabilidad y Accesibilidad</strong></td>
+                <td>1. Máximo <strong>1 botón primario por pantalla</strong>.<br>2. Errores siempre con <strong>texto +
+                    ícono (⚠️)</strong>.<br>3. Áreas táctiles mínimas de <strong>48×48pt</strong>.</td>
+                <td>Previene toques accidentales bajo estrés y garantiza accesibilidad motriz y visual.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Muestra interactiva en vivo de los componentes del Sistema de Diseño -->
+        <div class="grid-2" style="margin-top:var(--space-3);">
+          <div class="card">
+            <h4>Muestra en vivo: Jerarquía de Botones (48×48pt mín.)</h4>
+            <p class="text-small text-secondary">Estados interactivos con foco de teclado accesible
+              (<code>:focus-visible</code>):</p>
+            <div class="btn-demo-group">
+              <button type="button" class="btn btn-primary">Primario (#456EFE)</button>
+              <button type="button" class="btn btn-secondary">Secundario (Borde)</button>
+              <button type="button" class="btn btn-tertiary">Terciario (Texto)</button>
+              <button type="button" class="btn" disabled>Deshabilitado</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4>Muestra en vivo: Inputs con Label fijo, Helper y Error</h4>
+            <div class="form-demo-group">
+              <label for="demo-monto" class="form-label">Monto del movimiento (Obligatorio)</label>
+              <input type="text" id="demo-monto" class="form-input form-input-error" placeholder="Ej. 150.000"
+                value="250.000" aria-describedby="demo-helper demo-error" aria-invalid="true" readonly>
+              <span id="demo-helper" class="helper-text">Ingresá el importe sin puntos ni símbolos de moneda.</span>
+              <span id="demo-error" class="error-text" role="alert">⚠️ Este gasto supera por $45.000 el saldo disponible
+                en tu bolsillo "Sueldo Personal".</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder para captura de la página Sistema de Diseño en Figma -->
+        <figure class="media-figure">
+          <img src="img/sistema-diseno.png"
+            alt="Captura de la página Sistema de Diseño en Figma con componentes, variantes de botones, inputs y barra de navegación inferior"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder pendiente" style="display:flex;">
+            <span class="pendiente-tag">⚠️ PENDIENTE — Integrante 2</span>
+            <strong>Captura de la página "Sistema de Diseño" en Figma</strong>
+            <span class="text-small text-secondary">Colocar imagen en: <code>img/sistema-diseno.png</code></span>
+          </div>
+          <figcaption>
+            Figura 5.1: Biblioteca de componentes, tokens de color, escalas tipográficas y variantes en Figma.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- FIN BLOQUE INTEGRANTE 2 / INICIO BLOQUE INTEGRANTE 3 (Sección 6)      -->
+    <!-- ===================================================================== -->
+
+    <!-- SECCIÓN 6: EVALUACIONES REALIZADAS — EVALUAR -->
+    <section id="evaluaciones" class="section section-alt" aria-labelledby="titulo-evaluaciones">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">6. Fase Evaluar</span>
+          <h2 id="titulo-evaluaciones">Evaluaciones de Usabilidad e Iteración</h2>
+          <p class="lead">
+            Auditoría formativa de los prototipos mediante métodos de inspección (Recorrido Cognitivo y Evaluación
+            Heurística), pruebas con usuarios sobre wireframes y planificación formal del test sobre la demo funcional.
+          </p>
+        </div>
+
+        <!-- 6.1 Recorrido cognitivo y Evaluación heurística -->
+        <article class="card" style="margin-bottom:var(--space-4);">
+          <span class="pendiente-tag">⚠️ PENDIENTE — Integrante 3</span>
+          <h3>6.1 Recorrido Cognitivo y Evaluación Heurística (Prototipo en Papel)</h3>
+          <p class="text-secondary">
+            Inspección realizada sobre los bocetos en papel antes de digitalizar los wireframes, clasificando la
+            severidad de 1 (problema cosmético) a 4 (problema catastrófico de usabilidad).
+          </p>
+
+          <div class="table-wrapper" role="region" aria-label="Tabla de recorrido cognitivo y evaluación heurística"
+            tabindex="0">
+            <table>
+              <caption>Registro de hallazgos de inspección sobre el prototipo en papel</caption>
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Problema Encontrado</th>
+                  <th scope="col">Heurística de Nielsen / Paso del Recorrido Afectado</th>
+                  <th scope="col">Severidad (1–4)</th>
+                  <th scope="col">Cambio Realizado en Wireframes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>H-01</strong></td>
+                  <td><strong>[Completar por Integrante 3]:</strong> Describir el problema detectado en el boceto en
+                    papel (ej. ambigüedad sobre si el botón "+" registra un ingreso o un gasto).</td>
+                  <td><strong>[Completar]:</strong> Ej. H1: Visibilidad del estado del sistema / Paso 1 de la Tarea 2.
+                  </td>
+                  <td><span class="badge-sev-4">⛔ Severidad 4 — Crítica</span></td>
+                  <td><strong>[Completar]:</strong> Describir la solución aplicada al pasar a wireframe.</td>
+                </tr>
+                <tr>
+                  <td><strong>H-02</strong></td>
+                  <td><strong>[Completar por Integrante 3]:</strong> Describir el segundo hallazgo de inspección (ej.
+                    falta de confirmación clara al editar una transacción histórica).</td>
+                  <td><strong>[Completar]:</strong> Ej. H5: Prevención de errores / H3: Control y libertad del usuario.
+                  </td>
+                  <td><span class="badge-sev-3">⚠️ Severidad 3 — Mayor</span></td>
+                  <td><strong>[Completar]:</strong> Describir el cambio estructural realizado.</td>
+                </tr>
+                <tr>
+                  <td><strong>H-03</strong></td>
+                  <td><strong>[Completar por Integrante 3]:</strong> Describir el tercer hallazgo de inspección.</td>
+                  <td><strong>[Completar]:</strong> Ej. H6: Reconocer antes que recordar.</td>
+                  <td><span class="badge-sev-2">ℹ️ Severidad 2 — Menor</span></td>
+                  <td><strong>[Completar]:</strong> Describir el ajuste de etiquetas o layout.</td>
+                </tr>
+                <tr>
+                  <td><strong>H-04</strong></td>
+                  <td><strong>[Completar por Integrante 3]:</strong> Describir el cuarto hallazgo cosmético o de
+                    consistencia.</td>
+                  <td><strong>[Completar]:</strong> Ej. H4: Consistencia y estándares.</td>
+                  <td><span class="badge-sev-1">○ Severidad 1 — Cosmética</span></td>
+                  <td><strong>[Completar]:</strong> Describir la estandarización en el Sistema de Diseño.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- 6.2 Prueba de usabilidad con wireframes -->
+        <article class="card" style="margin-bottom:var(--space-4);">
+          <span class="pendiente-tag">⚠️ PENDIENTE — Integrante 3</span>
+          <h3>6.2 Prueba de Usabilidad con Wireframes (Baja/Media Fidelidad)</h3>
+          <p class="text-secondary">
+            Validación temprana con usuarios reales interactuando sobre los wireframes para corregir problemas de flujo
+            y comprensión antes de invertir esfuerzo en la capa visual de alta fidelidad.
+          </p>
+
+          <div class="grid-2" style="margin-bottom:var(--space-2);">
+            <div class="pendiente" style="margin:0;">
+              <h4>👥 Resumen de Participantes</h4>
+              <p class="text-small" style="margin:0;">
+                <strong>[Completar por Integrante 3]:</strong> Indicar cantidad de participantes evaluados con
+                wireframes, perfil (emprendedoras / personas con múltiples ingresos) y modalidad de las sesiones
+                (presencial o remota pensando en voz alta — <em>Think Aloud</em>).
+              </p>
+            </div>
+            <div class="pendiente" style="margin:0;">
+              <h4>📌 Síntesis de Aprendizajes</h4>
+              <p class="text-small" style="margin:0;">
+                <strong>[Completar por Integrante 3]:</strong> Resumir qué funcionó según lo esperado (ej. comprensión
+                inmediata de los bolsillos separados) y dónde hubo dudas durante la prueba.
+              </p>
+            </div>
+          </div>
+
+          <div class="table-wrapper" role="region"
+            aria-label="Tabla de hallazgos de la prueba de usabilidad con wireframes" tabindex="0">
+            <table>
+              <caption>Problemas observados en la prueba con wireframes y mejoras aplicadas en Alta Fidelidad</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Tarea Evaluada</th>
+                  <th scope="col">Hallazgo / Comportamiento Observado</th>
+                  <th scope="col">Severidad (1–4)</th>
+                  <th scope="col">Cambio Aplicado Antes de Pasar a Alta Fidelidad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Tarea 1</strong><br><span class="text-small text-secondary">(Consulta de saldo por
+                      bolsillo)</span></td>
+                  <td><strong>[Completar por Integrante 3]:</strong> Describir lo observado con los participantes.</td>
+                  <td><span class="badge-sev-2">ℹ️ Severidad 2 — Menor</span></td>
+                  <td><strong>[Completar por Integrante 3]:</strong> Detallar el cambio aplicado en el diseño de alta
+                    fidelidad.</td>
+                </tr>
+                <tr>
+                  <td><strong>Tarea 2</strong><br><span class="text-small text-secondary">(Registro rápido ≤ 10
+                      s)</span></td>
+                  <td><strong>[Completar por Integrante 3]:</strong> Describir fricción o duda observada al seleccionar
+                    el bolsillo destino.</td>
+                  <td><span class="badge-sev-3">⚠️ Severidad 3 — Mayor</span></td>
+                  <td><strong>[Completar por Integrante 3]:</strong> Detallar cómo se optimizó el selector en alta
+                    fidelidad.</td>
+                </tr>
+                <tr>
+                  <td><strong>Tarea 3</strong><br><span class="text-small text-secondary">(Alerta de sobregiro)</span>
+                  </td>
+                  <td><strong>[Completar por Integrante 3]:</strong> Describir la reacción de los usuarios ante el
+                    mensaje de advertencia.</td>
+                  <td><span class="badge-sev-3">⚠️ Severidad 3 — Mayor</span></td>
+                  <td><strong>[Completar por Integrante 3]:</strong> Detallar el ajuste de microcopy y jerarquía de
+                    botones.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- 6.3 Plan de la prueba de usabilidad con la demo -->
+        <article class="card">
+          <span class="pendiente-tag">⚠️ PENDIENTE — Integrante 3</span>
+          <h3>6.3 Plan de la Prueba de Usabilidad con la Demo Funcional</h3>
+          <p class="text-secondary">
+            Protocolo metodológico diseñado para evaluar la demo interactiva de la Entrega Final con usuarios
+            representativos.
+          </p>
+
+          <div class="grid-2">
+            <div class="pendiente" style="margin:0;">
+              <h4>1. Objetivo de la Prueba</h4>
+              <p class="text-small" style="margin:0;">
+                <strong>[Completar por Integrante 3]:</strong> Validar si usuarios con múltiples ingresos logran
+                registrar movimientos en ≤ 10 segundos (RNF Eficiencia), distinguir su liquidez personal sin error (HU1)
+                y tomar decisiones informadas ante la alerta de sobregiro (HU5).
+              </p>
+            </div>
+
+            <div class="pendiente" style="margin:0;">
+              <h4>2. Perfil de Participantes (Mínimo 5 usuarios nuevos)</h4>
+              <p class="text-small" style="margin:0;">
+                <strong>Requisito obligatorio:</strong> Mínimo <strong>5 participantes nuevos</strong> que cumplan el
+                perfil de múltiples fuentes de ingreso / emprendimiento paralelo, que <strong>no hayan participado en
+                  etapas previas y no sean compañeros del curso</strong>.
+              </p>
+            </div>
+
+            <div class="pendiente" style="margin:0;">
+              <h4>3. Estrategia de Reclutamiento</h4>
+              <p class="text-small" style="margin:0;">
+                <strong>[Completar por Integrante 3]:</strong> Describir canales de contacto (redes de emprendedores
+                locales, ferias, referidos externos), filtro de selección (≥ 2 fuentes de ingreso activas) y gestión de
+                consentimiento informado.
+              </p>
+            </div>
+
+            <div class="pendiente" style="margin:0;">
+              <h4>4. Escenarios de Tareas (Sin nombrar botones ni pantallas)</h4>
+              <p class="text-small" style="margin-bottom:8px;">
+                <strong>Regla metodológica:</strong> Redactar situaciones realistas de uso sin dar pistas de interfaz ni
+                usar palabras literales de los botones:
+              </p>
+              <ul class="text-small" style="margin:0;">
+                <li><strong>Escenario 1 (HU2):</strong> <em>"Acabás de cobrar $85.000 por un pedido de tu emprendimiento
+                    de repostería. Dejá asentado ese dinero en la aplicación para que no se mezcle con tu sueldo."</em>
+                </li>
+                <li><strong>Escenario 2 (HU1/HU5):</strong> <em>"Estás frente al mostrador y querés comprar algo
+                    personal de $120.000 usando únicamente tu dinero libre de sueldo. Intentá asentar esa salida y
+                    decidí qué hacer según lo que te informe la aplicación."</em></li>
+                <li><strong>Escenario 3 (HU3/HU4):</strong> <em>"[Completar por Integrante 3 con el escenario de
+                    consulta de balance o corrección de un monto mal cargado]."</em></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="table-wrapper" role="region" aria-label="Tabla de métricas del plan de prueba de usabilidad"
+            tabindex="0" style="margin-top:var(--space-3);">
+            <table>
+              <caption>5. Métricas Cuantitativas y Subjetivas a Recolectar en la Prueba con la Demo</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Métrica</th>
+                  <th scope="col">Definición y Escala de Medición</th>
+                  <th scope="col">Umbral de Éxito Esperado (Meta UX)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Tasa de Completitud (Efectividad)</strong></td>
+                  <td>Porcentaje de tareas completadas con éxito sin asistencia del moderador (Éxito / Éxito con
+                    dificultad / Fallo).</td>
+                  <td><strong>≥ 85%</strong> de éxito en las tareas críticas.</td>
+                </tr>
+                <tr>
+                  <td><strong>Tiempo en la Tarea (Eficiencia)</strong></td>
+                  <td>Segundos transcurridos desde que el participante inicia la acción hasta confirmar el movimiento.
+                  </td>
+                  <td><strong>≤ 10 segundos</strong> promedio en registro de movimiento (RNF de HU2).</td>
+                </tr>
+                <tr>
+                  <td><strong>Tasa de Errores</strong></td>
+                  <td>Cantidad de toques erróneos, selección equivocada de bolsillo o desvíos del flujo óptimo por
+                    tarea.</td>
+                  <td><strong>≤ 1 error no crítico</strong> por participante por tarea.</td>
+                </tr>
+                <tr>
+                  <td><strong>SEQ (Single Ease Question)</strong></td>
+                  <td>Pregunta post-tarea: <em>"En general, ¿qué tan fácil o difícil fue realizar esta tarea?"</em> en
+                    escala Likert de <strong>1 (Muy difícil) a 7 (Muy fácil)</strong>.</td>
+                  <td>Puntaje promedio <strong>≥ 5,5 sobre 7</strong> en cada tarea.</td>
+                </tr>
+                <tr>
+                  <td><strong>SUS (System Usability Scale)</strong></td>
+                  <td>Cuestionario estandarizado final de 10 ítems al concluir toda la sesión (escala de 0 a 100
+                    puntos).</td>
+                  <td>Puntaje global promedio <strong>≥ 75 puntos</strong> (Buena a Excelente usabilidad).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ===================================================================== -->
+    <!-- FIN BLOQUE INTEGRANTE 3                                               -->
+    <!-- ===================================================================== -->
+
+
+    <!-- ===================================================================== -->
+    <!-- SECCIONES 7, 8 Y 9: PREPARADAS PARA ENTREGA FINAL (14 DE DICIEMBRE)   -->
+    <!-- ===================================================================== -->
+
+    <!-- SECCIÓN 7: DEMO FUNCIONAL -->
+    <section id="demo" class="section" aria-labelledby="titulo-demo">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">7. Entrega Final — Próxima entrega: 14 de diciembre</span>
+          <h2 id="titulo-demo">Demo Interactiva Funcional</h2>
+        </div>
+
+        <details class="final-delivery-details">
+          <summary>
+            <span>📦 Expandir estructura reservada para la Sección 7 (Próxima entrega: 14 de diciembre)</span>
+            <span class="pendiente-tag" style="margin:0;">⏳ Entrega Final</span>
+          </summary>
+
+          <div class="grid-2">
+            <div class="pendiente" style="margin:0;">
+              <h3>Acceso a la Demo en <code>/demo</code></h3>
+              <p>Espacio reservado para vincular la aplicación web interactiva alojada en la carpeta <code>/demo</code>
+                de este repositorio.</p>
+              <a href="demo/" class="btn btn-primary">Probar Demo Interactiva (/demo) [PENDIENTE]</a>
+            </div>
+
+            <div class="pendiente" style="margin:0;">
+              <h3>Listado de Tareas de Punta a Punta Implementadas</h3>
+              <ul class="text-small" style="margin:0;">
+                <li><strong>Flujo 1:</strong> Creación y visualización de bolsillos separados sin saldo consolidado
+                  (HU1).</li>
+                <li><strong>Flujo 2:</strong> Registro ultrarrápido de ingreso/egreso en 2 campos con cálculo en tiempo
+                  real (HU2 / HU3).</li>
+                <li><strong>Flujo 3:</strong> Disparo de alerta de sobregiro y edición de transacción histórica con log
+                  (HU4 / HU5).</li>
+              </ul>
+            </div>
+          </div>
+
+          <figure class="media-figure">
+            <div class="img-placeholder pendiente">
+              <span class="pendiente-tag">⏳ Próxima entrega: 14 de diciembre</span>
+              <strong>Video demostrativo corto (&lt; 2 minutos) o capturas de la Demo Funcional</strong>
+              <span class="text-small text-secondary">Aquí se incrustará el recorrido en video de las tareas funcionando
+                de punta a punta.</span>
+            </div>
+            <figcaption>Figura 7.1: Demostración en video (&lt; 2 min) de Bolsillos App ejecutándose en el navegador.
+            </figcaption>
+          </figure>
+        </details>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 8: PRUEBA DE USABILIDAD CON LA DEMO -->
+    <section id="prueba-demo" class="section section-alt" aria-labelledby="titulo-prueba-demo">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">8. Entrega Final — Próxima entrega: 14 de diciembre</span>
+          <h2 id="titulo-prueba-demo">Resultados de la Prueba de Usabilidad con la Demo</h2>
+        </div>
+
+        <details class="final-delivery-details">
+          <summary>
+            <span>📊 Expandir estructura reservada para la Sección 8 (Próxima entrega: 14 de diciembre)</span>
+            <span class="pendiente-tag" style="margin:0;">⏳ Entrega Final</span>
+          </summary>
+
+          <div class="grid-3">
+            <div class="pendiente" style="margin:0;">
+              <h3>Participantes Anonimizados (P1 a P5+)</h3>
+              <p class="text-small" style="margin:0;">Tabla descriptiva de los ≥ 5 participantes externos (sin nombres
+                reales para resguardar privacidad), detallando cantidad de fuentes de ingreso y contexto de uso.</p>
+            </div>
+
+            <div class="pendiente" style="margin:0;">
+              <h3>Métricas Obtenidas (Completitud, Tiempo, SEQ y SUS)</h3>
+              <p class="text-small" style="margin:0;">Resultados cuantitativos por tarea frente al umbral de ≤ 10
+                segundos, puntaje SEQ (1–7) y cálculo del puntaje SUS final.</p>
+            </div>
+
+            <div class="pendiente" style="margin:0;">
+              <h3>Antes y Después (Correcciones Severidad 3 y 4)</h3>
+              <p class="text-small" style="margin:0;">Comparativa visual de capturas <em>Antes vs. Después</em>
+                documentando cómo se resolvieron en el código de la demo todos los hallazgos críticos y mayores.</p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 9: REFLEXIÓN FINAL -->
+    <section id="reflexion" class="section" aria-labelledby="titulo-reflexion">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">9. Entrega Final — Próxima entrega: 14 de diciembre</span>
+          <h2 id="titulo-reflexion">Reflexión Final del Equipo</h2>
+        </div>
+
+        <details class="final-delivery-details">
+          <summary>
+            <span>🧠 Expandir estructura reservada para la Sección 9 (Próxima entrega: 14 de diciembre)</span>
+            <span class="pendiente-tag" style="margin:0;">⏳ Entrega Final</span>
+          </summary>
+
+          <div class="grid-3">
+            <div class="pendiente" style="margin:0;">
+              <h3>Aprendizajes del Proceso UX</h3>
+              <p class="text-small" style="margin:0;">Reflexión crítica del equipo sobre cómo la investigación empírica
+                transformó la idea inicial de una app contable tradicional hacia un sistema de fronteras perceptuales
+                rápidas.</p>
+            </div>
+
+            <div class="pendiente" style="margin:0;">
+              <h3>Límites Actuales y Próximos Pasos</h3>
+              <p class="text-small" style="margin:0;">Análisis de limitaciones del alcance académico y hoja de ruta
+                futura (notificaciones bancarias automatizadas, lectura de comprobantes QR).</p>
+            </div>
+
+            <div class="pendiente" style="margin:0;">
+              <h3>Uso de IA vs. Decisiones Humanas</h3>
+              <p class="text-small" style="margin:0;">Balance transparente de dónde aportó velocidad la IA generativa
+                (normalización de datos, soporte de maquetación) y qué decisiones críticas de diseño, empatía y
+                priorización fueron exclusivamente humanas.</p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página semántico -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;">
+        <div>
+          <h2 style="color:#FFFFFF; font-size:1.25rem; margin-bottom:8px;">Bolsillos App — Fronteras Financieras: Del
+            Caos al Control</h2>
+          <p class="text-secondary text-small" style="margin-bottom:8px;">
+            Portafolio académico de Interacción Humano-Máquina / Diseño UX. Construido con HTML5 semántico, CSS3 puro y
+            estándares de accesibilidad WCAG 2.1 AA.
+          </p>
+          <p class="text-secondary text-small" style="margin-bottom:0;">
+            <strong>Equipo:</strong> Jessica Armoa · Santiago Peralta · Sebastián Leguizamón
+          </p>
+        </div>
+        <div style="text-align:right;">
+          <a href="#portada" class="btn btn-secondary" style="color:#FFFFFF; border-color:#FFFFFF;">↑ Volver al inicio
+            del portafolio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
