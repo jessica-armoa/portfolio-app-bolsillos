@@ -54,228 +54,122 @@
 
     <!-- SECCIÓN 1: PORTADA (ESTILO CASE STUDY CON PANTALLAS DE FIGMA AL INICIO) -->
     <section id="portada" class="section" aria-labelledby="titulo-portada">
-      <div class="container hero-grid">
-        <div>
-          <div class="container">
-            <div class="hero-header">
-              <span class="section-eyebrow">1. Caso de Estudio UX — Entrega Parcial</span>
-              <h1 id="titulo-portada">Bolsillos App <span
-                  style="display:block; font-size:0.58em; color:var(--color-text-secondary); font-weight:600; margin-top:8px;">Aplicación
-                  móvil de gestión financiera rápida para emprendedoras múltiples.</span></h1>
+      <div class="container">
+        <div class="hero-header">
+          <span class="section-eyebrow">1. Caso de Estudio UX — Entrega Parcial</span>
+          <h1 id="titulo-portada">Bolsillos App <span
+              style="display:block; font-size:0.58em; color:var(--color-text-secondary); font-weight:600; margin-top:8px;">Aplicación
+              móvil de gestión financiera rápida para emprendedoras múltiples.</span></h1>
 
-              <h2 class="text-small"
-                style="text-transform:uppercase; letter-spacing:0.06em; color:var(--color-text-secondary); margin-bottom:8px;">
-                Equipo de Diseño UX</h2>
-              <ul class="team-list" aria-label="Integrantes del proyecto">
-                <li class="team-badge">Jessica Armoa</li>
-                <li class="team-badge">Santiago Peralta</li>
-                <li class="team-badge">Sebastián Leguizamón</li>
-              </ul>
+          <h2 class="text-small"
+            style="text-transform:uppercase; letter-spacing:0.06em; color:var(--color-text-secondary); margin-bottom:8px;">
+            Equipo de Diseño UX</h2>
+          <ul class="team-list" aria-label="Integrantes del proyecto">
+            <li class="team-badge">Jessica Armoa</li>
+            <li class="team-badge">Santiago Peralta</li>
+            <li class="team-badge">Sebastián Leguizamón</li>
+          </ul>
 
-              <div class="btn-demo-group">
-                <a href="#investigacion" class="btn btn-primary">Explorar Proceso de Investigación</a>
-                <a href="#prototipos" class="btn btn-secondary">Ver Evolución y Sistema de Diseño</a>
-              </div>
-            </div>
-
-            <!-- Ficha ejecutiva del Caso de Estudio (Inspirada en portafolios IxDF / Pratibha Joshi) -->
-            <div class="case-meta-bar" role="region" aria-label="Ficha técnica del caso de estudio">
-              <div class="case-meta-item">
-                <span class="case-meta-label">Rol del Equipo</span>
-                <span class="case-meta-value">UX Research · Arquitectura de Información · UI &amp; Accesibilidad
-                  WCAG</span>
-              </div>
-              <div class="case-meta-item">
-                <span class="case-meta-label">Métodos y Muestra</span>
-                <span class="case-meta-value">23 Encuestas Cuantitativas · 2 Entrevistas en Profundidad · Crazy
-                  8s</span>
-              </div>
-              <div class="case-meta-item">
-                <span class="case-meta-label">Herramientas</span>
-                <span class="case-meta-value">Figma · Gemini AI (Síntesis verificada) · HTML5 / CSS3 Accesible</span>
-              </div>
-              <div class="case-meta-item">
-                <span class="case-meta-label">Meta de Impacto UX</span>
-                <span class="case-meta-value">Separación perceptual sin clics · Registro en ≤ 10 segundos</span>
-              </div>
-            </div>
-
-            <!-- El problema y la solución lado a lado antes del escaparate visual -->
-            <div class="grid-2" style="margin-bottom:var(--space-4);">
-              <div class="problem-box" style="margin:0;">
-                <h3>⚠️ El Problema y Para Quién Es</h3>
-                <p style="margin-bottom:0;">
-                  <strong>Personas con múltiples fuentes de ingreso</strong> (especialmente emprendedoras que combinan
-                  sueldo fijo con proyectos paralelos) que sufren una <strong>"falsa sensación de liquidez"</strong>
-                  al ver su saldo bancario unificado y terminan mezclando fondos y descapitalizando su negocio por
-                  accidente.
-                </p>
-              </div>
-
-              <div class="card card-highlight">
-                <h3>✨ La Solución Propuesta (Impacto Visual Inmediato)</h3>
-                <p style="margin-bottom:0;">
-                  <strong>Bolsillos App</strong> elimina el saldo total consolidado de la vista inicial y traza
-                  <strong>fronteras visuales estrictas por fuente de ingreso</strong>, permitiendo registrar
-                  movimientos con solo <strong>2 campos obligatorios en ≤ 10 segundos</strong> y alertando en
-                  lenguaje coloquial antes de gastar fondos de reposición.
-                </p>
-              </div>
-            </div>
-
-            <!-- ESCAPARATE DE PANTALLAS DE FIGMA AL INICIO (3 PANTALLAS CLAVE EN ALTA FIDELIDAD) -->
-            <div class="figma-showcase-wrapper" role="region" aria-labelledby="titulo-escaparate-figma">
-              <div style="text-align:center; margin-bottom:var(--space-3);">
-                <span class="section-eyebrow">Vista Previa en Alta Fidelidad (Figma)</span>
-                <h3 id="titulo-escaparate-figma" style="margin-top:4px; margin-bottom:4px;">Las 3 Pantallas Clave
-                  de Bolsillos App</h3>
-                <p class="text-small text-secondary" style="margin:0;">
-                  Previsualización interactiva con los componentes reales del Sistema de Diseño. Al guardar tus
-                  exportaciones de Figma en <code>img/</code>, se mostrarán automáticamente dentro de cada
-                  dispositivo.
-                </p>
-              </div>
-
-              <div class="figma-phones-grid">
-                <!-- Pantalla Figma 1: Dashboard de Bolsillos Separados -->
-                <figure class="media-figure" style="margin:0; border:none; background:transparent; padding:0;">
-                  <div class="phone-frame">
-                    <div class="phone-notch" aria-hidden="true"></div>
-                    <img src="img/portada-alta-fidelidad.png"
-                      alt="Pantalla 1 en Figma: Dashboard de Bolsillos separados mostrando Sueldo Fijo y Emprendimientos sin saldo consolidado"
-                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="phone-screen-ui">
-                      <div>
-                        <span class="pendiente-tag" style="width:100%; justify-content:center;">📱 Figma 1:
-                          img/portada-alta-fidelidad.png</span>
-                        <h4 style="font-size:0.95rem; margin-bottom:4px;">Mis Bolsillos Separados</h4>
-                        <p class="text-small text-secondary" style="font-size:0.75rem; margin-bottom:12px;">Sin
-                          saldo total unificado (Previene falsa liquidez — HU1)</p>
-
-                        <div class="pocket-mini-card">
-                          <span class="pocket-mini-title">💼 Sueldo Fijo (Dinero Libre Personal)</span>
-                          <span class="pocket-mini-amount">Gs. 1.450.000</span>
-                        </div>
-
-                        <div class="pocket-mini-card pocket-biz">
-                          <span class="pocket-mini-title">🧁 Emprendimiento 1: Repostería</span>
-                          <span class="pocket-mini-amount">Gs. 2.180.000</span>
-                          <span class="text-small"
-                            style="display:block; font-size:0.72rem; color:var(--color-success);">✓
-                            Balance mes:
-                            +Gs. 640.000</span>
-                        </div>
-
-                        <div class="pocket-mini-card pocket-biz">
-                          <span class="pocket-mini-title">📦 Emprendimiento 2: Showroom</span>
-                          <span class="pocket-mini-amount">Gs. 890.000</span>
-                        </div>
-                      </div>
-                      <div style="text-align:center; padding-top:8px; border-top:1px solid var(--color-border-soft);">
-                        <span class="btn btn-primary"
-                          style="width:100%; min-height:42px; font-size:0.875rem; padding:8px;">+ Registrar
-                          Movimiento</span>
-                      </div>
-                    </div>
-                  </div>
-                  <figcaption>
-                    <strong>Pantalla 1 — Fronteras Visuales (HU1/HU3):</strong> Saldos separados por defecto en la
-                    pantalla principal sin clics ni scroll.
-                  </figcaption>
-                </figure>
-
-                <!-- Pantalla Figma 2: Registro Ultrarrápido en <= 10 segundos -->
-                <figure class="media-figure" style="margin:0; border:none; background:transparent; padding:0;">
-                  <div class="phone-frame">
-                    <div class="phone-notch" aria-hidden="true"></div>
-                    <img src="img/figma-hero-registro.png"
-                      alt="Pantalla 2 en Figma: Registro ultrarrápido de movimiento con solo 2 campos obligatorios (Monto y Bolsillo)"
-                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="phone-screen-ui">
-                      <div>
-                        <span class="pendiente-tag" style="width:100%; justify-content:center;">📱 Figma 2:
-                          img/figma-hero-registro.png</span>
-                        <h4 style="font-size:0.95rem; margin-bottom:4px;">Registro Rápido (≤ 10 seg)</h4>
-                        <p class="text-small text-secondary" style="font-size:0.75rem; margin-bottom:12px;">Máximo
-                          2 campos obligatorios (HU2 / RF3)</p>
-
-                        <div class="pocket-mini-card" style="border-left-color:var(--color-action);">
-                          <span class="pocket-mini-title">1. Monto del movimiento *</span>
-                          <span class="pocket-mini-amount" style="color:var(--color-action);">Gs. 85.000</span>
-                        </div>
-
-                        <div class="pocket-mini-card">
-                          <span class="pocket-mini-title">2. Seleccionar Bolsillo *</span>
-                          <span
-                            style="display:inline-block; background:var(--color-action-soft); color:var(--color-action); font-weight:700; font-size:0.8rem; padding:4px 8px; border-radius:4px; margin-top:4px;">✓
-                            🧁 Repostería</span>
-                        </div>
-
-                        <div class="pocket-mini-card" style="border-style:dashed; border-left-width:1px;">
-                          <span class="pocket-mini-title">Nota rápida (Opcional — HU6)</span>
-                          <span class="text-small text-secondary" style="font-size:0.75rem;">Ej. Compra de harina
-                            y chocolate</span>
-                        </div>
-                      </div>
-                      <div style="text-align:center; padding-top:8px; border-top:1px solid var(--color-border-soft);">
-                        <span class="btn btn-primary"
-                          style="width:100%; min-height:42px; font-size:0.875rem; padding:8px;">Guardar en 1
-                          toque</span>
-                      </div>
-                    </div>
-                  </div>
-                  <figcaption>
-                    <strong>Pantalla 2 — Fricción Cero (HU2):</strong> Solo 2 campos obligatorios con labels
-                    siempre visibles y áreas táctiles ≥ 48×48pt.
-                  </figcaption>
-                </figure>
-
-                <!-- Pantalla Figma 3: Alerta de Sobregiro Empática -->
-                <figure class="media-figure" style="margin:0; border:none; background:transparent; padding:0;">
-                  <div class="phone-frame">
-                    <div class="phone-notch" aria-hidden="true"></div>
-                    <img src="img/figma-hero-alerta.png"
-                      alt="Pantalla 3 en Figma: Alerta de sobregiro en lenguaje coloquial cuando un gasto supera el disponible del bolsillo"
-                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="phone-screen-ui">
-                      <div>
-                        <span class="pendiente-tag" style="width:100%; justify-content:center;">📱 Figma 3:
-                          img/figma-hero-alerta.png</span>
-                        <h4 style="font-size:0.95rem; margin-bottom:4px;">Protección de Capital</h4>
-                        <p class="text-small text-secondary" style="font-size:0.75rem; margin-bottom:12px;">
-                          Prevención frente al mostrador (HU5)</p>
-
-                        <div
-                          style="background:var(--color-error-bg); border:1.5px solid var(--color-error); border-radius:var(--radius-sm); padding:12px; margin-bottom:12px;">
-                          <span
-                            style="display:block; font-weight:700; color:var(--color-error); font-size:0.85rem; margin-bottom:6px;">⚠️
-                            ¡Cuidado! Vas a superar tu bolsillo</span>
-                          <p class="text-small" style="font-size:0.78rem; margin:0; color:var(--color-text-primary);">
-                            Este gasto de <strong>Gs. 250.000</strong> supera por <strong>Gs. 45.000</strong> tu
-                            disponible en <em>"Sueldo Personal"</em>. Si continuás, estarías usando dinero de tus
-                            emprendimientos.
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        style="display:flex; flex-direction:column; gap:8px; padding-top:8px; border-top:1px solid var(--color-border-soft);">
-                        <span class="btn btn-primary"
-                          style="width:100%; min-height:42px; font-size:0.82rem; padding:8px;">Cancelar y proteger
-                          negocio</span>
-                        <span class="btn btn-secondary"
-                          style="width:100%; min-height:42px; font-size:0.82rem; padding:8px;">Continuar de todos
-                          modos</span>
-                      </div>
-                    </div>
-                  </div>
-                  <figcaption>
-                    <strong>Pantalla 3 — Alerta de Sobregiro (HU5):</strong> Advertencia con ícono ⚠️ + lenguaje
-                    coloquial y 1 solo botón primario.
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
+          <div class="btn-demo-group">
+            <a href="#investigacion" class="btn btn-primary">Explorar Proceso de Investigación</a>
+            <a href="#prototipos" class="btn btn-secondary">Ver Evolución y Sistema de Diseño</a>
           </div>
+        </div>
+
+        <!-- Ficha ejecutiva del Caso de Estudio (Inspirada en portafolios IxDF / Pratibha Joshi) -->
+        <div class="case-meta-bar" role="region" aria-label="Ficha técnica del caso de estudio">
+          <div class="case-meta-item">
+            <span class="case-meta-label">Rol del Equipo</span>
+            <span class="case-meta-value">UX Research · Arquitectura de Información · UI &amp; Accesibilidad
+              WCAG</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Métodos y Muestra</span>
+            <span class="case-meta-value">23 Encuestas Cuantitativas · 2 Entrevistas en Profundidad · Crazy
+              8s</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Herramientas</span>
+            <span class="case-meta-value">Figma · Gemini AI (Síntesis verificada) · HTML5 / CSS3 Accesible</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Meta de Impacto UX</span>
+            <span class="case-meta-value">Separación perceptual sin clics · Registro en ≤ 10 segundos</span>
+          </div>
+        </div>
+
+        <!-- El problema y la solución lado a lado ocupando el 100% del contenedor responsive -->
+        <div class="grid-2" style="margin-bottom:var(--space-4);">
+          <div class="problem-box" style="margin:0;">
+            <h3>⚠️ El Problema y Para Quién Es</h3>
+            <p style="margin-bottom:0;">
+              <strong>Personas con múltiples fuentes de ingreso</strong> (especialmente emprendedoras que combinan
+              sueldo fijo con proyectos paralelos) que sufren una <strong>"falsa sensación de liquidez"</strong>
+              al ver su saldo bancario unificado y terminan mezclando fondos y descapitalizando su negocio por
+              accidente.
+            </p>
+          </div>
+
+          <div class="card card-highlight">
+            <h3>✨ La Solución Propuesta (Impacto Visual Inmediato)</h3>
+            <p style="margin-bottom:0;">
+              <strong>Bolsillos App</strong> elimina el saldo total consolidado de la vista inicial y traza
+              <strong>fronteras visuales estrictas por fuente de ingreso</strong>, permitiendo registrar
+              movimientos con solo <strong>2 campos obligatorios en ≤ 10 segundos</strong> y alertando en
+              lenguaje coloquial antes de gastar fondos de reposición.
+            </p>
+          </div>
+        </div>
+
+        <!-- ESCAPARATE DE PANTALLAS REALES EN ALTA FIDELIDAD (ESTILO PORTADA DE PROYECTO FIGMA CON INCLINACIÓN) -->
+        <div class="figma-showcase-wrapper" role="region" aria-labelledby="titulo-escaparate-figma">
+          <div style="text-align:center; margin-bottom:var(--space-4);">
+            <span class="section-eyebrow">Presentación Visual en Alta Fidelidad</span>
+            <h3 id="titulo-escaparate-figma" style="margin-top:4px; margin-bottom:4px;">Pantallas Principales de Bolsillos App</h3>
+            <p class="text-small text-secondary" style="margin:0;">
+              Diseño final aplicando el Sistema de Diseño oficial: separación perceptual por bolsillo, registro rápido y prevención de sobregiro.
+            </p>
+          </div>
+
+          <div class="figma-cover-stage">
+            <!-- Pantalla 1 (Izquierda inclinada): Detalle de Bolsillos -->
+            <figure class="figma-tilt-card tilt-left">
+              <div class="figma-device-frame">
+                <img src="img/alta_fidelidad/Bolsillo.png"
+                  alt="Pantalla en alta fidelidad de Bolsillos App mostrando el saldo separado del bolsillo con ingresos, egresos y movimientos">
+              </div>
+              <figcaption>
+                <strong>1. Fronteras Visuales (HU1/HU3)</strong>
+                <span>Saldos y balance separados por bolsillo sin total consolidado.</span>
+              </figcaption>
+            </figure>
+
+            <!-- Pantalla 2 (Centro destacada): Nuevo Movimiento en <= 10 segundos -->
+            <figure class="figma-tilt-card tilt-center">
+              <div class="figma-device-frame">
+                <img src="img/alta_fidelidad/NuevoMovimiento.png"
+                  alt="Pantalla en alta fidelidad de Bolsillos App para registrar un nuevo movimiento con teclado rápido y selector de bolsillo">
+              </div>
+              <figcaption>
+                <strong>2. Registro Rápido ≤ 10 s (HU2)</strong>
+                <span>Fricción mínima con solo 2 campos obligatorios: Monto y Bolsillo.</span>
+              </figcaption>
+            </figure>
+
+            <!-- Pantalla 3 (Derecha inclinada): Alerta de Sobregiro -->
+            <figure class="figma-tilt-card tilt-right">
+              <div class="figma-device-frame">
+                <img src="img/alta_fidelidad/Sobregiro.png"
+                  alt="Pantalla en alta fidelidad de Bolsillos App mostrando la alerta de sobregiro cuando un gasto supera el saldo disponible del bolsillo">
+              </div>
+              <figcaption>
+                <strong>3. Alerta de Sobregiro (HU5)</strong>
+                <span>Advertencia empática en lenguaje coloquial antes de descapitalizarse.</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- SECCIÓN 2: INVESTIGACIÓN — EMPATIZAR -->
