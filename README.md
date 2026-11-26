@@ -1,4 +1,4 @@
-# Bolsillos App — Fronteras Financieras: Del Caos al Control
+# Bolsillos App — Aplicación móvil de gestión financiera rápida para emprendedoras múltiples.
 
 Portafolio académico del proceso de Diseño de Experiencia de Usuario (UX) e Interacción Humano-Máquina para **Bolsillos App**, una herramienta diseñada para personas y emprendedoras con múltiples fuentes de ingreso que necesitan separar visualmente su dinero en tiempo real sin fricción manual.
 
